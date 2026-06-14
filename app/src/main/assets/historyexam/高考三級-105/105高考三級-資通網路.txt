@@ -1,0 +1,36 @@
+105年公務人員高等考試三級考試試題 
+代號：26620 
+全一頁
+類
+科： 資訊處理
+科
+目： 資通網路
+考試時間 ： 2 小時 
+座號：
+※注意： ※禁止使用電子計算器。 
+注：不必抄題，作答時請將試題題號及答案依照順序寫在試卷上，於本試題上作答者，不予計分。
+一、目前在網際網路上有電腦遭遇到勒索病毒（Ransomware）感染，請說明什麼是勒索
+病毒？（10 分）
+二、下列為網際網路常見的網路術語，請寫出它們的英文全名。（每小題3 分，共15 分） 
+※SSID 
+注：IPS 
+IPSec 
+AES 
+PGP
+三、一般電腦必須要有IP 位址才能上網，而IP 位址分配有固定IP 設定與DHCP。 
+※請問DHCP 英文全名為何？（5 分） 
+注：請詳細說明DHCP 運作原理，即DHCP Client 與DHCP Server 之間的互動與傳遞
+訊息為何？（15 分）
+四、一般網路位址分配指派分為CIDR 與Classful Addressing。 
+※請說明CIDR 是如何分配網路位址區塊？（10 分） 
+注：請說明Classful Addressing 是如何分配網路位址區塊？（10 分）
+五、※在802.11 標準中，AP（Access Point）會定期送出Beacon Frame，請問Beacon Frame
+包含何種資訊及其用途。（5 分） 
+注：對於AP 掃瞄（Scanning）分為主動掃描（Active Scanning）與被動掃描（Passive 
+Scanning），請說明兩者運作模式。（10 分）
+六、請回答下列問題：（每小題5 分，共20 分） 
+※什麼是Piggybacked Acknowledgement？ 
+注：什麼是Cumulative Acknowledgement？ 
+什麼是Premature Timeout？ 
+承題，該如何降低Premature Timeout 的發生？
+（請接背面）

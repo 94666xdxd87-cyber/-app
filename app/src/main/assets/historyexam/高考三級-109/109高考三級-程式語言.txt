@@ -1,0 +1,67 @@
+代號：38440
+頁次：2－1
+109年公務人員高等考試三級考試試題
+類
+科：資訊處理
+科
+目：程式語言
+考試時間：2小時
+座號：
+※注意：※禁止使用電子計算器。
+注：不必抄題，作答時請將試題題號及答案依照順序寫在試卷上，於本試題上作答者，不予計分。
+本科目除專門名詞或數理公式外，應使用本國文字作答。
+一、※請將下面程式改寫為尾遞迴（tail recursion）的形式。（15分）
+int recsum(int x){
+if (x == 1) return(x);
+return(x + recsum(x - 1));
+}
+注：請問尾遞迴形式的優點為何？（10分）
+二、假設每個int變數占用4 bytes，每個指標變數也占用4 bytes。下面的C程式
+印出的結果為何？（25分）
+# include <stdio.h>
+typedef int T1[10][9];
+int main(){
+struct {
+T1
+*a[10];
+int
+(*b)[100];
+} f[10][10][10];
+printf("p1 = %d\n",(int)sizeof(f[1][5]));
+printf("p2 = %d\n",(int)sizeof(f[2][3][4].a));
+printf("p3 = %d\n",(int)sizeof(f[3][2][6].b));
+printf("p4 = %d\n",(int)(f - &f[5]));
+printf("p5 = %d\n",(int)(f[6][2] - f[3][3]));
+}
+代號：38440
+頁次：2－2
+三、下面的C程式印出的結果為何？（作答必須解釋計算過程，只寫答案而未
+加解釋，只能得部分分數。）（25分）
+# include <stdio.h>
+int foo1(int p){
+if (p >= 90) return(foo1(foo1(p-11)));
+return(p+10);
+}
+int foo2(int p){
+if (p < 91) return(foo2(p+11));
+return(p);
+}
+int foo(int p){
+return(foo1(foo2(p)));
+}
+int main(int argc, char **argv){
+int q;
+q = 65;
+printf("foo(%d)= %d.\n", q, foo(q));
+q = 83;
+printf("foo(%d)= %d.\n", q, foo(q));
+q = 95;
+printf("foo(%d)= %d.\n", q, foo(q));
+q = 100;
+printf("foo(%d)= %d.\n", q, foo(q));
+q = 142;
+printf("foo(%d)= %d.\n", q, foo(q));
+return(0);
+}
+四、物件導向程式語言有繼承的觀念，請解釋單一繼承（single inheritance）與
+多重繼承（multiple inheritance）的意義、差別及實作方法。（25分）

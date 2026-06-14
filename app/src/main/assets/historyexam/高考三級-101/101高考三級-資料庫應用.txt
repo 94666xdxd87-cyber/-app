@@ -1,0 +1,104 @@
+全一張 
+（正面）
+101年公務人員高等考試三級考試試題 
+代號：36270
+類  科： 資訊處理 
+科  目： 資料庫應用 
+考試時間： 2 小時 
+座號：
+※注意： ※禁止使用電子計算器。 
+注：不必抄題，作答時請將試題題號及答案依照順序寫在試卷上，於本試題上作答者，不予計分。
+一、解釋下列各名詞：（每小題4 分，共20 分）
+※Metadata   
+注：Roll forward  
+Boyce-Codd normal form（BCNF） 
+ID dependent entity  
+Three tier architecture database system
+二、請說明當資料表資料異動時，為了維護關聯式資料庫的referential integrity（RI），
+通常會採用那些處理方式？（12 分）
+三、請說明何謂deadlock？並請舉一例說明，資料庫操作中，它是怎麼發生的？（12 分）
+四、假設現有如下有關單車出租管理的需求：
+‧可以查詢單車資料，包括廠牌、編號、出廠日期、購入日期、購入金額、尺寸、
+種類（如可否變速、淑女車、兒童車、雙人座…）。 
+‧可以查詢單車出借的清單，清單中包括租車人姓名、聯絡電話、單車、出租日期、
+出租期間（開始及結束的時間）、租金總額。 
+‧可以查詢租車人租車清單，包括租車人姓名（需考慮同姓同名的辨識方式）、
+租車日期及期間（需考慮同一人可能於同一天租同一部單車一次以上）。 
+※請為如上的需求繪製相關、最精簡、最佳的Extended Entity-Relationship model
+（EE-R model)，模式中亦需將primary key（主鍵）、foreign key（外來鍵）、
+資料表關聯的maximum cardinality（最大基數比關係）標示清楚。（18 分） 
+注：請使用SQL 回應如下的查詢：（～各6 分，共18 分） 
+ 列出2012 年六月份不同單車類型的租金總收入。 
+ 列出單車編號G000000001 的購入日期、購入金額及至2012/07/15 止的租金總
+收入。 
+ 列出租車記錄超過1 次的客戶姓名及聯絡電話。
+（請接背面）
+全一張 
+（背面）
+101年公務人員高等考試三級考試試題 
+代號：36270
+類  科： 資訊處理 
+科  目： 資料庫應用
+五、請將如下的課程綱要XML 資料內容轉換為關聯式資料庫，資料庫中需包含資料庫
+名稱、資料表間的關聯（含maximum cardinality，必要時可以加入foreign key 或
+internal key 為關聯的處理）、資料表（以二維表格表示，第一橫行註明欄位名稱，
+其它橫行為資料表的資料內容，主鍵欄位請於欄位名加上底線表示）名稱、欄位名
+稱及資料值內容。（20 分） 
+<SyllabusList>  
+ 
+ <Syllabus code="A0001"> 
+ 
+  
+<year>2012</year> 
+ 
+  
+<semester>Spring</semester> 
+ 
+  
+<field>Information</field> 
+ 
+  
+<course>DB system</course> 
+ 
+  
+<instructor>Mary Hwang</instructor> 
+ 
+  
+<schedule> <week>1 
+</week> <topic>Introduction 
+</topic> </schedule> 
+ 
+  
+<schedule> <week>2~5 </week> <topic>Data model 
+</topic> </schedule> 
+ 
+  
+<schedule> <week>6~8 </week> <topic>Relational DB </topic> </schedule> 
+ 
+ </Syllabus>  
+ 
+ <Syllabus code="A0002"> 
+ 
+  
+<year>2012</year> 
+ 
+  
+<semester>Fall</semester> 
+ 
+  
+<field>General course</field> 
+ 
+  
+<course>English</course> 
+ 
+  
+<instructor>Jacky Liu</instructor> 
+ 
+  
+<schedule> <week>1~6 </week> <topic>Reading </topic> </schedule> 
+ 
+  
+<schedule> <week>7~12 </week> <topic>Writing </topic> </schedule>  
+ 
+ </Syllabus>  
+</SyllabusList>

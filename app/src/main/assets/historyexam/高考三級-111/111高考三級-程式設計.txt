@@ -1,0 +1,142 @@
+代號：37240
+頁次：4－1
+111年公務人員高等考試三級考試試題
+類
+科：資訊處理
+科
+目：程式設計
+考試時間：2 小時
+座號：
+※注意：※禁止使用電子計算器。
+注：不必抄題，作答時請將試題題號及答案依照順序寫在試卷上，於本試題上作答者，不予計分。
+本科目除專門名詞或數理公式外，應使用本國文字作答。
+一、請問以下三小題C 程式執行的結果為何？請注意須說明答案是如何產
+生的，否則不給分。
+※（5 分）
+#include <stdio.h>
+#include <stdlib.h>
+int main(void) {
+int x;
+float y;
+for (x=0, y=50; x<25; x+=5, y/=2)
+printf("x=%d, y=%4.2f\n", x, y);
+return 0;
+}
+注：（5 分）
+#include <stdio.h>
+#include <stdlib.h>
+int a=10, fun(int);
+int main(void) {
+int b=6;
+printf("a=%d, b=%d, fun(a)=%d\n", a, b, fun(a));
+return 0;
+}
+int fun(int b) {
+a-=5; b/=2;
+return(a+b);
+}
+代號：37240
+頁次：4－2
+（10 分）
+#include <stdio.h>
+#include <stdlib.h>
+#define SIZE 10
+void fun(int *, int);
+int main(void) {
+int x[SIZE] = {1,2,3,4,5,6,7,8,9,10};
+fun(x, SIZE);
+printf("\n");
+return 0;
+}
+void fun(int *a, int size) {
+if (size > 0) {
+fun(a+3, size-3);
+printf("*(a+%d)=%d\n", SIZE-size, *a);
+}
+}
+二、資料庫是企業組織或政府部門中用以保存大量資料的機制。下圖為資料
+表的結構，請回答以下各小題。（每小題10 分，共20 分）
+employee
+salary_slip
+id : varchar(10)
+year : int
+month : int
+amount : int
+id : varchar(10)
+first_name : varchar(30)
+last_name : varchar(20)
+※請以SQL 列出某一個人的年度薪資總額，必須顯示id, first_name,
+last_name 及總額。
+注：現在的資料查詢服務常見於網頁系統，而SQLInjection 是最常見的資
+料庫攻擊方式。請問下列查詢語句是否會有被攻擊的疑慮？若有的話
+該如何改善？程式碼可以使用PHP 或ASP.NET。
+SELECT first_name, last_name FROM employee WHERE id=’A001’
+代號：37240
+頁次：4－3
+三、請使用C, C++, Java 或Python 程式語言撰寫採用五位數整數來進行資料
+加密的完整程式。（30 分）
+撰寫加密函數encrypt()，此函數可將所傳入的五位數整數進行加密，
+並將加密後的密碼傳回。加密的規則如下：
+
+先將該五位數整數的每位數值分別以「加5 後除以10 之餘數」
+取代。
+
+再將取代後之數字的第一位數與第五位數互換，第二位數與第四
+位數互換，第三位數不變後取得一個新整數，此即為加密後的密
+碼。（註：第一位數為萬分位、第二位數為千分位，以此類推。）
+撰寫解密函數decipher()，此函數可將所傳入的五位數密碼進行解密，
+並將解密後的整數傳回。解密的規則是將上述加密後之密碼還原為原
+傳入的整數。
+撰寫主程式來驗證上述之加密與解密函數的正確性。程式一開始先讓
+使用者輸入任一之五位數整數[不在合理範圍內（10000~99999）須請
+使用者重新輸入]，在呼叫加密函數後將所傳回之密碼從螢幕上顯示
+出；再將該密碼傳入解密函數，再將所傳回之整數從螢幕上顯示出。
+程式須可讓使用者持續輸入五位數之整數，直到使用者輸入0（整數）
+時結束程式的執行。
+以下為程式執行的範例：（備註：斜體加外框線之整數為使用者所輸入，
+其餘皆為程式執行的輸出。）
+請輸入一個五位數的整數（輸入0 結束程式）：1234
+所輸入的數值並不是五位數之整數
+請重新輸入：12345
+加密後的密碼為：09876
+解密後的密碼為：12345
+請輸入一個五位數的整數（輸入0 結束程式）：67890
+加密後的密碼為：54321
+解密後的密碼為：67890
+請輸入一個五位數的整數（輸入0 結束程式）：0
+感謝使用此程式，歡迎您對此程式的優化提出建議。
+代號：37240
+頁次：4－4
+四、抽象（abstract）類別、介面（interface）、覆寫（override）方法、多載（overload）
+方法是物件導向程式設計實現多型（polymorphism）的方式。下圖是人
+事系統中人員基本資料維護的類別圖，請說明類別圖中的覆寫方法及多
+載方法名稱（須說明理由），並使用C++, Java 或Python 程式語言撰寫
+Person 類別與Police 類別的程式碼。Police 類別之GetPersonalInformation
+函數必須傳回身分證（id_no）、姓名（name）、職稱（rank），UpdateRoleTitle
+函數必須完整實作更新police_rank。（30 分）
+Person
+<<abstract>>
+# id_no : string
+# name : string
+Program
+Main(string[] args):void
++ GetPersonalInformation() : string
++ UpdateRoleTitle() : void
+Staff
+Police
+- police_rank : PoliceRank
+- staff_position : StaffPosition
++ Police(id : string, name : string)
++ GetPersonalInformation() : string
++ UpdateRoleTitle(title : ?) : void
++ Staff(id : string, name : string)
++ GetPersonalInformation() : string
++ UpdateRoleTitle(title : ?) : void
+PoliceRank
+StaffPosition
++ code : string
++ rank : string
++ code : string
++ title : string
++ PoliceRank(code : string, rank : string)
++ StaffPosition(code : string, title : string)

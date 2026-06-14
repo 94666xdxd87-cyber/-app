@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:background="#FAFAFA">
+
+    <!-- 標題列 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingStart="8dp"
+        android:paddingEnd="16dp"
+        android:background="#FFFFFF"
+        android:elevation="3dp">
+
+        <ImageButton
+            android:id="@+id/btnEssayEditBack"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@android:drawable/ic_media_previous"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="返回"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="📝 申論題記錄"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#212121"
+            android:paddingStart="8dp"/>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:clipToPadding="false"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:paddingTop="16dp"
+        android:paddingBottom="@dimen/bottom_safe_padding">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- 科目 -->
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="📂 科目 / 標籤" android:textSize="13sp" android:textColor="#616161"
+                android:layout_marginBottom="4dp"/>
+            <EditText android:id="@+id/etEssaySubject"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:hint="例如：資通網路" android:inputType="text" android:maxLines="1"
+                android:padding="12dp" android:background="@android:drawable/edit_text"
+                android:layout_marginBottom="16dp"/>
+
+            <!-- 題目 -->
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="📌 題目內容" android:textSize="13sp" android:textColor="#616161"
+                android:layout_marginBottom="4dp"/>
+            <EditText android:id="@+id/etEssayQuestion"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:hint="貼上或輸入申論題題目…" android:inputType="textMultiLine"
+                android:minLines="4" android:maxLines="10" android:gravity="top"
+                android:padding="12dp" android:background="@android:drawable/edit_text"
+                android:layout_marginBottom="16dp"/>
+
+            <!-- 作答 -->
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="✏️ 你的回答" android:textSize="13sp" android:textColor="#616161"
+                android:layout_marginBottom="4dp"/>
+            <EditText android:id="@+id/etEssayUserAnswer"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:hint="貼上或輸入你的申論答案…" android:inputType="textMultiLine"
+                android:minLines="5" android:maxLines="15" android:gravity="top"
+                android:padding="12dp" android:background="@android:drawable/edit_text"
+                android:layout_marginBottom="16dp"/>
+
+            <!-- ╔══════════ AI 評分流程 ══════════╗ -->
+            <TextView
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:text="── AI 評分流程（依序執行）──"
+                android:textSize="13sp" android:textColor="#1565C0"
+                android:gravity="center" android:paddingTop="4dp" android:paddingBottom="8dp"/>
+
+            <!-- Step 1: 複製 Prompt A -->
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="horizontal" android:layout_marginBottom="8dp">
+                <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1" android:gravity="center_vertical"
+                    android:text="Step 1：複製 Prompt A 給 AI（建立評分標準）"
+                    android:textSize="13sp" android:textColor="#424242"/>
+                <Button android:id="@+id/btnCopyPromptA"
+                    android:layout_width="wrap_content" android:layout_height="40dp"
+                    android:text="📋 複製" android:textSize="12sp" android:textColor="#FFFFFF"
+                    android:backgroundTint="#00897B" android:paddingStart="12dp" android:paddingEnd="12dp"/>
+            </LinearLayout>
+
+            <!-- Step 2: 複製答案 -->
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="horizontal" android:layout_marginBottom="8dp">
+                <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1" android:gravity="center_vertical"
+                    android:text="Step 2：複製你的答案給 AI（批改作答）"
+                    android:textSize="13sp" android:textColor="#424242"/>
+                <Button android:id="@+id/btnCopyAnswer"
+                    android:layout_width="wrap_content" android:layout_height="40dp"
+                    android:text="📋 複製" android:textSize="12sp" android:textColor="#FFFFFF"
+                    android:backgroundTint="#F57C00" android:paddingStart="12dp" android:paddingEnd="12dp"/>
+            </LinearLayout>
+
+            <!-- Step 3: 複製 Prompt B -->
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="horizontal" android:layout_marginBottom="12dp">
+                <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1" android:gravity="center_vertical"
+                    android:text="Step 3：複製 Prompt B 給 AI（取得結構化結果）"
+                    android:textSize="13sp" android:textColor="#424242"/>
+                <Button android:id="@+id/btnCopyPromptB"
+                    android:layout_width="wrap_content" android:layout_height="40dp"
+                    android:text="📋 複製" android:textSize="12sp" android:textColor="#FFFFFF"
+                    android:backgroundTint="#7B1FA2" android:paddingStart="12dp" android:paddingEnd="12dp"/>
+            </LinearLayout>
+
+            <!-- 開啟 AI 按鈕列 -->
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="horizontal" android:layout_marginBottom="16dp">
+                <Button android:id="@+id/btnOpenGemini"
+                    android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1" android:text="🌐 開啟 Gemini"
+                    android:textSize="13sp" android:textColor="#FFFFFF"
+                    android:backgroundTint="#7B1FA2" android:layout_marginEnd="6dp"/>
+                <Button android:id="@+id/btnOpenChatGpt"
+                    android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1" android:text="💬 開啟 ChatGPT"
+                    android:textSize="13sp" android:textColor="#FFFFFF"
+                    android:backgroundTint="#10A37F"/>
+            </LinearLayout>
+
+            <!-- 狀態提示 -->
+            <TextView android:id="@+id/tvEssayEditStatus"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:textSize="13sp" android:padding="10dp" android:background="#F5F5F5"
+                android:visibility="gone" android:layout_marginBottom="8dp"/>
+
+            <!-- Step 4: 貼入 Prompt B 的 AI 回覆 -->
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="Step 4：貼入 AI 對 Prompt B 的回覆（自動解析）"
+                android:textSize="13sp" android:textColor="#C62828"
+                android:layout_marginBottom="4dp"/>
+            <EditText android:id="@+id/etEssayAiReply"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:hint="將 AI 回覆的 ===RESULT_START=== ... ===RESULT_END=== 貼到這裡…"
+                android:inputType="textMultiLine" android:minLines="5" android:maxLines="20"
+                android:gravity="top" android:padding="12dp"
+                android:background="@android:drawable/edit_text" android:layout_marginBottom="8dp"/>
+
+            <!-- 分隔線：自動批改區塊 -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#BDBDBD"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="12dp"/>
+
+            <!-- API 自動批改按鈕 -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="✨ 自動批改（一鍵完成）"
+                android:textSize="13sp"
+                android:textColor="#1565C0"
+                android:textStyle="bold"
+                android:layout_marginBottom="6dp"/>
+
+            <Button
+                android:id="@+id/btnAutoGrade"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:text="🤖 API 自動批改（Prompt C）"
+                android:textSize="15sp"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#1565C0"
+                android:layout_marginBottom="6dp"/>
+
+            <ProgressBar
+                android:id="@+id/pbAutoGrade"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="6dp"
+                android:indeterminate="true"
+                android:indeterminateTint="#1565C0"
+                android:visibility="gone"
+                android:layout_marginBottom="16dp"/>
+
+            <!-- 分隔線：手動流程區塊 -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#BDBDBD"
+                android:layout_marginBottom="12dp"/>
+
+            <Button android:id="@+id/btnParseAndSave"
+                android:layout_width="match_parent" android:layout_height="52dp"
+                android:text="🔍 解析並儲存紀錄"
+                android:textSize="16sp" android:textColor="#FFFFFF"
+                android:backgroundTint="#1565C0" android:layout_marginBottom="8dp"/>
+
+            <!-- 解析結果預覽 -->
+            <TextView android:id="@+id/tvParsedPreview"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:padding="12dp" android:background="#E8F5E9"
+                android:textSize="13sp" android:textColor="#1B5E20"
+                android:lineSpacingMultiplier="1.4"
+                android:visibility="gone" android:layout_marginBottom="16dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

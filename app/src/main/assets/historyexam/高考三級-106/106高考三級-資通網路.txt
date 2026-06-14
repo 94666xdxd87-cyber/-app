@@ -1,0 +1,24 @@
+106年公務人員高等考試三級考試試題 
+代號：26020 
+全一頁
+類
+科：資訊處理 
+科
+目：資通網路 
+考試時間：2 小時 
+座號：
+※注意： ※禁止使用電子計算器。 
+注：不必抄題，作答時請將試題題號及答案依照順序寫在試卷上，於本試題上作答者，不予計分。 
+本科目除專門名詞或數理公式外，應使用本國文字作答。
+一、什麼是Client-Server？試以P-A-D 模式定義Client-based 與Server-based Client-Server 
+Computing 之應用架構。此外，那一種應用架構是較適用於Cloud Computing？（25 分）
+二、Ethernet 網路介面卡（NIC）其資料編碼（Data Encoding）方法為何？此外，並說明
+此資料編碼之運作技術以及說明其至少二項優點。（25 分）
+三、試分別定義Wi-Fi 無線區域網路與行動電話（Cell Phone）網路的漫遊（Roaming）
+方法與其運作流程，並比較此二種方法之連線服務的差異性。（25 分）
+四、請試述下列通訊網路之專有名詞或通訊協定之意涵，並說明每小題中，兩者間的差
+異性： 
+※TDM Multiplexer vs. STDM Multiplexer（10 分） 
+注：Stop-and-Wait ARQ vs. Continuous ARQ（10 分） 
+HDLC vs. SDLC（5 分）
+（請接背面）

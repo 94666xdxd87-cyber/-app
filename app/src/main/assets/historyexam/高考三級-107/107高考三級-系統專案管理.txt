@@ -1,0 +1,69 @@
+107年公務人員高等考試三級考試試題 
+代號：36360 
+全一張
+（正面）
+類
+科： 資訊處理 
+科
+目： 系統專案管理
+考試時間： 2 小時 
+座號：
+※注意： ※禁止使用電子計算器。 
+注：不必抄題，作答時請將試題題號及答案依照順序寫在試卷上，於本試題上作答者，不予計分。 
+本科目除專門名詞或數理公式外，應使用本國文字作答。
+一、請依據以下的Java 程式碼利用逆向工程的概念繪製出完整對應的UML 類別圖（Class 
+Diagram）。（25 分） 
+public class Customer { 
+   private String name; 
+   private String address; 
+   private String phoneNumber; 
+   ArrayList<Car> carList = new ArrayList<Car>(); 
+} 
+ 
+public class Car { 
+    private String model; 
+    private double carPrice = 0.0; 
+    protected int speed = 0; 
+    private Customer owner; 
+    public String getModel() { 
+        return model; 
+    } 
+    public void setModel(String model) { 
+        this.model = model; 
+    } 
+    public int getSpeed() { 
+         System.out.println("You are going " + speed + " mph"); 
+          return speed; 
+    } 
+    public void accelerate(int acc) { 
+          speed =speed + acc; 
+    } 
+} 
+ 
+public class Compact extends Car { 
+    public final int num_door = 2; 
+}
+二、將限制理論（Theory of Constraint）應用於專案管理中，在時程規劃上應先行找出關
+鍵鏈（Critical Chain），再加入緩衝（buffer），緩衝又可分為3 種，分別為專案緩衝
+（project buffer）、進入緩衝（feeding buffer）及資源緩衝（resource buffer）。請說明
+這三種緩衝加入的時機與目的為何？（25 分）
+（請接背面）
+107年公務人員高等考試三級考試試題 
+代號：36360 
+全一張
+（背面）
+類
+科： 資訊處理 
+科
+目： 系統專案管理
+三、功能點分析法（Functional Point Analysis）是一個符合國際標準（ISO/IEC 20926）的
+開發軟體規模估計方法。它強調應該以使用者觀點（User View）估算所開發之軟體
+系統功能性，並量化成功能點數（Function Points），而並不是由技術觀點（Technical 
+View）分析系統之功能。因此它將使用者觀點的功能型態分為資料功能類與交易功
+能類，並進一步將資料功能類所需處理的檔案分為內部邏輯檔案（Internal Logical 
+File）與外部介面檔案（External Interface File），並將交易功能分為外部輸入（External 
+Input）、外部輸出（External Output）與外部查詢（External Query）。請解釋這5 種功
+能型態的意義為何？（25 分）
+四、參與SCRUM 這種敏捷式軟體專案開發方法中可扮演的角色有那3 種，請問：
+※這3 種角色及其職責各為何？（10 分） 
+注：另請舉出3 種SCRUM 在進行中的相關活動，並說明其活動內容。（15 分）

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:background="#FAFAFA">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="14dp"
+        android:gravity="center_vertical"
+        android:background="#FFFFFF"
+        android:elevation="2dp">
+
+        <TextView
+            android:id="@+id/tvProgress"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="第 1 題 / 5 題"
+            android:textSize="15sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tvAnsweredCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="已作答：0"
+            android:textSize="12sp"
+            android:textColor="#757575"
+            android:layout_marginEnd="8dp"/>
+
+        <TextView
+            android:id="@+id/tvExamTimer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="#E53935"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/tvCategory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="12sp"
+            android:textColor="#2196F3"
+            android:layout_marginStart="8dp"/>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="14dp"
+        android:importantForAccessibility="noHideDescendants"> <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvQuestion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="16sp"
+            android:lineSpacingMultiplier="1.5"
+            android:padding="14dp"
+            android:background="#FFFFFF"
+            android:elevation="1dp"
+            android:layout_marginBottom="14dp"/>
+
+        <Button android:id="@+id/btnA"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="match_parent" android:layout_height="52dp"
+            android:text="(A)" android:layout_marginBottom="8dp"
+            android:gravity="start|center_vertical" android:paddingStart="16dp"/>
+
+        <Button android:id="@+id/btnB"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="match_parent" android:layout_height="52dp"
+            android:text="(B)" android:layout_marginBottom="8dp"
+            android:gravity="start|center_vertical" android:paddingStart="16dp"/>
+
+        <Button android:id="@+id/btnC"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="match_parent" android:layout_height="52dp"
+            android:text="(C)" android:layout_marginBottom="8dp"
+            android:gravity="start|center_vertical" android:paddingStart="16dp"/>
+
+        <Button android:id="@+id/btnD"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="match_parent" android:layout_height="52dp"
+            android:text="(D)" android:layout_marginBottom="8dp"
+            android:gravity="start|center_vertical" android:paddingStart="16dp"/>
+
+    </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#FFFFFF"
+        android:elevation="4dp"
+        android:paddingBottom="@dimen/bottom_safe_padding">
+
+        <Button android:id="@+id/btnViewQuiz"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="查看題目回顧"
+            android:layout_marginHorizontal="12dp"
+            android:layout_marginTop="8dp"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="12dp">
+
+            <Button android:id="@+id/btnPrev"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="0dp" android:layout_height="50dp"
+                android:layout_weight="1" android:text="← 上一題"
+                android:layout_marginEnd="8dp"/>
+
+            <Button android:id="@+id/btnNext"
+                android:layout_width="0dp" android:layout_height="50dp"
+                android:layout_weight="1" android:text="下一題 →"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

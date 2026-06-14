@@ -1,0 +1,66 @@
+全一張 
+（正面）
+103年公務人員高等考試三級考試試題 
+代號：26840
+類  科： 資訊處理 
+科  目： 程式語言 
+考試時間： 2 小時 
+座號：           
+※注意： 
+禁止使用電子計算器。 
+不必抄題，作答時請將試題題號及答案依照順序寫在試卷上，於本試題上作答者，不予計分。
+一、請說明early binding（如C 語言）及late binding（如Perl 語言）之間最大的差異，
+並列出兩者主要的優點。（10 分）
+二、參考下述BNF grammar
+S    S + S  |  S - S  |  S * S  |  S / S  |  ( S )  |  a
+請回答總共有幾個不同的剖析樹（parse tree）可得到下列結果。本題不需畫出剖析
+樹，但請說明。（每小題5 分，共20 分） ※
+a + a * a  注：
+a + a * a / a  
+a + a + a + a    
+(a + (a + a)) + a
+三、參考右圖類C 語言的程式，請依下列小題所述參數傳遞方式，寫出執行程式B 後之
+輸出結果。（每小題10 分，共20 分） ※
+Program B () { 
+ 
+function A (X: integer) { 
+   X := X + 1;  
+   write(X, Y); 
+} 
+ 
+var Y : integer; 
+ 
+Y := 1;  
+A (Y); 
+write (Y); 
+}
+Y is passed by value.   注：
+Y is passed by reference.
+四、請用Scheme 或Lisp 等Functional Programming Language 寫一個符合下述規範的遞
+迴函數calculate。所寫的遞迴函數應該越簡潔越好。（20 分）
+(calculate A B C)：A 是某函數（function），B 是一整數（integer），C 是任
+一數值（value），回傳滿足N >= B 且(A  N)= C 的最小整數N。例如 
+ (calculate list 0 ‘(3))應回傳 3. 
+ (calculate (lambda (X) (> X 10)) 0 T) 應回傳 11. 
+ (calculate (lambda (X) (* X X)) 0 100) 應回傳 10.
+（請接背面）
+全一張 
+（背面）
+103年公務人員高等考試三級考試試題 
+代號：26840
+類  科： 資訊處理 
+科  目： 程式語言
+五、請參考以下的Java classes，解釋下列各小題的語法是否正確，如不正確請說明原因。
+（每小題5 分，共15 分）
+class X { public void x( ) { … } } 
+class Y extends X { public void y( ) { … } } 
+class Z extends Y { public void z( ) { … } } ※
+int count(Set<Y> s) { … } … count(new TreeSet<Z>( ));  注：
+ int count(Set<? extends Y> s) { … } … count(new
+TreeSet<Z>());   
+ int count(Set<? super Z> s) { for (X a : s) a.x( ); … };
+六、下述Prolog 程式可推論圖形中A 點到B 點的可行性，但是無法知道路徑。請改寫
+該程式使其可以用Prolog list 來記錄A 點到B 點的路徑。若A 點到不了B 點，則
+回應fail（false）即可。（15 分）
+get_to (A, B) :- path (A, B). 
+get_to (A, B) :- path (A, C), get_to (C, B).

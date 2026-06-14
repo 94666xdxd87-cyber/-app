@@ -1,0 +1,95 @@
+109年公務人員普通考試試題
+類
+科：資訊處理
+科
+目：程式設計概要
+考試時間：1小時30分
+座號：
+※注意：※禁止使用電子計算器。
+注：不必抄題，作答時請將試題題號及答案依照順序寫在試卷上，於本試題上作答者，不予計分。
+本科目除專門名詞或數理公式外，應使用本國文字作答。
+代號：45250
+頁次：3－1
+一、下面的遞迴程式執行後，印出的信息為何？（作答必須解釋計算過程，只
+寫答案而未加解釋，只能得部分分數。）（25分）
+# include <stdio.h>
+int new1(int p){
+if (p > 90) return(new1(new1(p-11)));
+return(p-10);
+}
+int new2(int p){
+if (p < 91) return(new2(p+11));
+return(p);
+}
+int new(int p){
+return(new1(new2(p)));
+}
+int main(int argc, char **argv){
+int q;
+q = 65;
+printf("new(%d)= %d.\n", q, new(q));
+q = 95;
+printf("new(%d)= %d.\n", q, new(q));
+q = 100;
+printf("new(%d)= %d.\n", q, new(q));
+q = 104;
+printf("new(%d)= %d.\n", q, new(q));
+q = 110;
+printf("new(%d)= %d.\n", q, new(q));
+return(0);
+}
+代號：45250
+頁次：3－2
+二、請參考以下Java程式。如果第一個輸入是25，第二個輸入是-34（負34）。
+最後印出來是什麼？（作答必須解釋計算過程，只寫答案而未加解釋，只
+能得部分分數。）（25分）
+import java.util.Scanner;
+public class JavaExample
+{
+public static void main(String args[])
+{
+int num1, num2;
+Scanner scanner = new Scanner(System.in);
+System.out.print("Enter first number:");
+num1 = scanner.nextInt();
+System.out.print("Enter second number:");
+num2 = scanner.nextInt();
+num1 = num1 ^ num2;
+num2 = num1 ^ num2;
+num1 = num1 ^ num2;
+scanner.close();
+System.out.println("The First number is "+num1);
+System.out.println("The Second number is "+num2);
+}
+}
+三、請問下列程式執行後，印出結果為何？（作答必須解釋計算過程，只寫答
+案而未加解釋，只能得部分分數。）（25分）
+(define return #f)
+(+ 1 (call/cc
+[lambda(cont)
+(set! return cont)
+1]
+))
+(return 22)
+代號：45250
+頁次：3－3
+四、請問下列程式執行後，印出結果為何？（作答必須解釋計算過程，只寫答
+案而未加解釋，只能得部分分數。）（25分）
+#include <iostream>
+using namespace std;
+bool sqst(int arr[], int n, int sum){
+if (sum == 0) { return true; }
+if (n < 0 || sum < 0) { return false; }
+bool include = sqst(arr, n - 1, sum - arr[n]);
+bool exclude = sqst(arr, n - 1, sum);
+return include || exclude;
+}
+int main(){
+int arr[] = { 7, 3, 2, 5, 8 };
+int sum = 14;
+int n = sizeof(arr)/ sizeof(arr[0]);
+if (sqst(arr, n - 1 , sum)) cout << "Yes";
+else
+cout << "No";
+return 0;
+}

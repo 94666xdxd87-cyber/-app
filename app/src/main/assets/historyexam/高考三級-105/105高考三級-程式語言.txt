@@ -1,0 +1,76 @@
+105年公務人員高等考試三級考試試題 
+代號：26640 
+全一張
+（正面）
+類
+科： 資訊處理
+科
+目： 程式語言
+考試時間 ： 2 小時 
+座號：
+※注意： ※禁止使用電子計算器。 
+注：不必抄題，作答時請將試題題號及答案依照順序寫在試卷上，於本試題上作答者，不予計分。
+一、請問下列Java 程式碼編譯後輸出結果為何？（20 分） 
+class tree{ 
+    void message(){ System.out.println("1359"); } 
+    int tree(){ System.out.println("Tr"); return 3; } 
+} 
+ 
+class two extends tree{ 
+    void message(){ super.message(); 
+                       System.out.println("4321"); } 
+    two(){ System.out.println("Tw"); } 
+} 
+ 
+public class one extends two{ 
+    void message(){ System.out.println("1234"); } 
+    one(){ System.out.println("On"); } 
+    public static void main(String[] args){ 
+        one Exam = new one(); 
+        Exam.message(); 
+} 
+}
+二、請觀察以下程式碼： 
+※請問以下C++程式碼輸出答案為何？（5 分） 
+注：請問執行至return 0 時，是否回收原分配給物件p 之動態記憶體？（5 分） 
+請說明此方法為解決何種問題？且程式概念為何？（10 分） 
+class Smart{  
+    public: 
+    explicit Smart(int *p = NULL) { sp = p; }   
+    ~Smart() { delete(sp); }  
+    int& operator*() { return *sp; }   
+    private: 
+    int *sp; 
+}; 
+int main(void){    
+    Smart p(new int()); 
+    *p = 2016; 
+    cout << *p << endl;  
+    return 0; 
+}
+（請接背面）
+105年公務人員高等考試三級考試試題 
+代號：26640 
+全一張
+（背面）
+類
+科：資訊處理
+科
+目：程式語言
+三、觀察以下C 語言之程式，試問輸出為何？（20 分） 
+int main(){ 
+int a = 1, b = 2, c = 3, d = 4; 
+printf( "%d\n%d\n%d\n%d\n", a+b+c+d, (b *= a), 
+         (a += d), (d++)); 
+}
+四、請回答以下問題： 
+※請描述C#程式語言中關鍵字const 之功用。（10 分） 
+注：請比較C#程式語言中關鍵字const 與readonly 差異。（10 分）
+五、請問下列C 語言程式碼執行後輸出結果為何？（20 分） 
+int main(){ 
+    double d[10][20][30][40]; 
+    printf("%d\n", (int) sizeof(d[1][5]));     
+    printf("%d\n", (int) sizeof(d[1][5][20]));  
+    printf("%d\n", (int) (d - &d[3]));            
+    printf("%d\n", (int) (d[3][4] - d[5][8]));  
+}

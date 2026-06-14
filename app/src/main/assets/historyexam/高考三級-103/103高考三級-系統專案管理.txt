@@ -1,0 +1,34 @@
+全一頁
+103年公務人員高等考試三級考試試題 
+代號：26860
+類  科： 資訊處理 
+科  目： 系統專案管理 
+考試時間： 2 小時 
+座號：           
+※注意： 
+禁止使用電子計算器。 
+不必抄題，作答時請將試題題號及答案依照順序寫在試卷上，於本試題上作答者，不予計分。
+一、請舉例說明與比較目前主要的系統開發方法論（Systems Development Methodologies）：
+結構化方法論（Structured Methodologies）、快速應用程式開發（Rapid Application 
+Development; RAD）、敏捷開發（Agile Development）。假設您是一位系統分析師，
+目前正在開發一個可提供策略性資訊以協助策略制定的高階主管資訊系統（Executive 
+Information Systems），請提出您在評估最適當開發方法論時，重要的一般評估準則、
+分析過程與結果。（20 分）
+二、統一塑模語言（Unified Modeling Language; UML）是一種視覺化、文件化與規格化
+的物件導向塑模工具。請說明UML 的三大構成要素，及各要素的主要分類，並以
+一個具體的系統開發實例說明其應用概況。（20 分）
+三、請說明三層式主從架構（Three-Tiered Client/Server），並分析三層式主從架構的可
+能設計方式。（15 分）
+四、系統測試的主要目的在驗證軟體是否能依設計運作，及需求是否被適當的實施。請
+說明與比較針對程式或模組的「單元測試」（Unit Tests）中，經常使用的「黑箱」
+（Black-box）與「白箱」（White-box）測試。（15 分）
+五、資訊系統在開發階段結束後，就進入實施與維護階段。系統維護（System
+Maintenance）是指資訊系統交付使用後，改正錯誤或滿足新的需求，以延長系統壽
+命的過程。請說明基於不同維護原因的主要系統維護類型，並以流程圖方式建議如
+何決定維護需求優先順序（Prioritize Maintenance Requests）的方式。（15 分）
+六、提升資訊系統專案品質的一個重要方法為「成熟度模式」（Maturity Model），可協
+助組織有系統的改善專案管理流程，提升專案品質與專案成功機率。請試述下列三
+個目前較受歡迎的成熟度模式：「軟體品質機能展開模式」（Software Quality 
+Function Deployment; SQFD）、「能力成熟度整合模式」（Capability Maturity 
+Model Integration; CMMI）、「組織專案管理成熟度模式」（Organizational Project 
+Management Maturity Model; OPM3）。（15 分）

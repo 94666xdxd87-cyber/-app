@@ -1,0 +1,396 @@
+100年公務人員普通考試試題
+類  科：電子工程、電信工程、資訊處理
+科  目：計算機概要
+考試時間：1 小時
+座號：
+※注意： ※本試題為單一選擇題，請選出一個正確或最適當的答案，複選作答者，該題不予計分。
+注：本科目共40題，每題2.5分，須用2B鉛筆在試卡上依題號清楚劃記，於本試題上作答者，不予計分。
+禁止使用電子計算器。
+代號：5405
+頁次：6－1
+[第 1 題] 若要將二元搜尋樹（binary search tree）中的元素由小到大依序走訪，可使用何種走訪法？
+(A) 前序走訪（preorder traversal）
+(B) 中序走訪（inorder traversal）
+(C) 後序走訪（postorder traversal）
+(D) 合併走訪（merge traversal）
+[第 2 題] 下列有關Prim 演算法（Prim’s algorithm）的敘述，何者正確？
+(A) Prim 演算法是搜尋二元樹（binary tree）的演算法
+(B) Prim 演算法是搜尋二元搜尋樹（binary search tree）的演算法
+(C) Prim 演算法是找出最低成本展開樹（minimum-cost spanning tree）的演算法
+(D) Prim 演算法是廣度優先搜尋（breadth-first search）的演算法
+[第 3 題] 資料個數很少時（例如10 筆以下），以下那一種排序演算法能得到較佳效能？
+(A) Quick sort
+(B) Insertion sort
+(C) Heap sort
+(D) Merge sort
+[第 4 題] 假設記憶體中儲存一整數（Integer）資料必須使用4 位元組（Byte）。今有一整數矩陣（Matrix）T 宣告為
+T[n][n]。若T 為上三角矩陣（Upper triangular matrix），如下所列是有關T 之敘述：①T 其位於主對
+角線（Main diagonal）上之組成元素其值皆為0，即T[k][k] = 0，0 ≤ k < n ②T[i][j] = 0，0 ≤ i ≤ j < n
+③若矩陣U = T × T，則U 亦為上三角矩陣（Upper triangular matrix） ④為節省記憶體儲存空間，
+可宣告一維陣列（One dimensional array）A[m]儲存T 中非0 之組成元素，則m ≤ n (n + 1)/2 ⑤將T
+之組成元素存入一維陣列（One dimensional array）A 之順序可選擇依“列為主順序（Row major order）＂
+或“行為主順序（Column major order）＂之方式。請選出最適合之選項：
+(A) ②③正確；④錯誤
+(B) ①⑤正確；③錯誤
+(C) ③⑤正確；①錯誤
+(D) ①②正確；④錯誤
+[第 5 題] 對一個堆疊（stack）依序作push
+(A) , push
+(B) , push
+(C) , pop(), pop(), push
+(D) , pop(), pop()，則上述四次
+pop()的結果依序為何？
+(A) CBDA
+(B) ABCD
+(C) ABDC
+(D) CBAD
+[第 6 題] 下列何者為樹林（forest）資料結構的定義？
+(A) 由零或零個以上互斥節點（disjoint node）所組成的集合
+(B) 由零或零個以上互斥葉節點（disjoint leaf node）所組成的集合
+(C) 由零或零個以上互斥樹（disjoint tree）所組成的集合
+(D) 由零或零個以上互斥路徑（disjoint path）所組成的集合
+[第 7 題] 下列為使用雜湊（Hashing）法有關之敘述：①雜湊（Hashing）法之主要應用為資料搜尋（Searching），
+故搜尋資料效率優於插入（Insertion）與刪除（Deletion）資料之效率 ②雜湊（Hashing）法之要點
+為：使用雜湊函式（Hash function）將資料鍵（Key）值對應至雜湊表（Hash table）中之儲存位置
+③使用雜湊（Hashing）法搜尋資料，其最佳情況（Best case）與最糟情況（Worst case）時間複雜
+度（Time complexity）皆為O(1) ④使用雜湊（Hashing）法之優點為：不需要比較鍵值（Key value）
+且資料不需要依據鍵值（Key value）排序之順序儲存 ⑤使用雜湊（Hashing）法之缺點為：雜湊表
+（Hash table）使用大量之記憶體儲存空間且雜湊函式（Hash function）計算費時。請由下列選項中
+選出最適合者：
+(A) ①②正確；③⑤錯誤
+(B) ③④正確；①⑤錯誤
+(C) ①③錯誤
+(D) ②④正確
+代號：5405
+頁次：6－2
+[第 8 題] 雙向鏈結串列（linked list）中每一節點有data、prev、next 三個欄位。data 儲存資料而prev 和next
+兩個指標分別指到前一個和後一個節點。則以下C++程式指令執行結果為何？
+cout << p-> next-> next->prev->data;
+p
+prev
+data
+next
+prev
+data
+next
+prev
+data
+next
+null
+[第 10 題] 30
+[第 20 題] null
+(A) 10
+(B) 30
+(C) 20
+(D) 無法執行
+[第 9 題] 下列那一種資料結構（data structure），最適合以深度優先搜尋（depth first search）走訪一個圖形
+（graph）時所採用？
+(A) 集合（set）
+(B) 串列（list）
+(C) 堆疊（stack）
+(D) 佇列（queue）
+[第 10 題] 下列為有關使用Dijkstra 演算法於圖形（Graph）結構G 中尋找最短路徑（Shortest path）之敘述：
+①Dijkstra 演算法僅適用於對邊線（Edge）具權值（Weight）之有向連接圖形（Directed connected graph）
+結構G 尋找最短路徑
+②使用Dijkstra 演算法可尋找G 中自任一頂點（Vertex）至所有其他頂
+點（Vertex）之最短路徑（Shortest path） ③使用Dijkstra 演算法可尋找G 中除了頂點（Vertex）vA
+以外之所有頂點（Vertex）至vA之最短路徑（Shortest path） ④使用Dijkstra 演算法對圖形（Graph）
+結構G 尋找最短路徑時，必須使用接鄰串列（Adjacency list）儲存G ⑤使用Dijkstra 演算法對圖形
+（Graph）結構G 找出之最短路徑中，若存在環路（Cycle），則組成該環路之所有邊線中，至少有
+一邊線其權值（Weight）為負值。請選出最適合之選項：
+(A) ②正確；④⑤錯誤
+(B) ①正確；③④錯誤
+(C) ④正確；②⑤錯誤
+(D) ⑤正確；①④錯誤
+[第 11 題] 假設系統中只有三個程序P1、P2 與P3，其進入ready queue 的時間（arrival time）、需要花費的CPU
+時間（CPU time）與各程序的優先權（priority）如下表所示。假設priority 數值越小，優先權越高，且
+程序的執行為非搶先（non-preemptive）的，這三個程序的平均等待時間為：
+程序
+Arrival time（ms）
+CPU time（ms）
+Priority
+P1
+[第 0 題] 4
+[第 1 題] P2
+[第 1 題] 8
+[第 3 題] P3
+[第 1 題] 5
+[第 2 題]
+(A) 4.33（ms）
+(B) 5.67（ms）
+(C) 5.33（ms）
+(D) 6（ms）
+[第 12 題] 下圖是那一種正反器（flip-flop）？
+X
+D
+Q
+Q'
+Clk
+Clk
+(A) SR flip-flop
+(B) Positive-edge-triggered D flip-flop
+(C) Master-slave D flip-flop
+(D) T flip-flop
+[第 13 題] 一般CPU 均會包含以下三種基本定址模式：immediate addressing mode、register addressing mode 與
+base addressing mode 來存取運算元（operand）。對CPU 而言，這三種定址模式取得運算元的速度由
+快而慢的順序應為何？
+(A) base addressing mode、register addressing mode、immediate addressing mode
+(B) immediate addressing mode、register addressing mode、base addressing mode
+(C) register addressing mode、immediate addressing mode、base addressing mode
+(D) immediate addressing mode、base addressing mode、register addressing mode
+代號：5405
+頁次：6－3
+[第 14 題] 下列三個程序P1、P2、P3 同時進入系統，所需的計算時間如下表所示：
+程序名稱
+所需計算時間
+P1
+[第 20 題] P2
+[第 3 題] P3
+[第 3 題] 作業系統使用依序循環（round robin）排程演算法，且每個時間切割（time quantum）為4 個時間單
+位。這三個程序的平均等待時間為何？（四捨五入到小數點第二位，循序排程時依照程序的名稱依
+序執行）
+(A) 7
+(B) 5.67
+(C) 33.67
+(D) 25
+[第 15 題] 在Linux 作業系統核心中，下列運算何者最少發生？
+(A) 浮點數運算
+(B) 整數運算
+(C) 指標運算
+(D) 迴圈運算
+[第 16 題] 某組合電路（combinational circuit）有兩個輸出F1 和F2，其布林函數（Boolean function）分別為：
+F1 = AB + AC',  F2 = AC' +BC
+若以可規劃邏輯陣列（programmable logic array, PLA）來實現此電路，則下列何者之規格（以輸入個
+數 × 積項個數 × 輸出個數表示之）最恰當？
+(A) 2 × 4 × 2
+(B) 2 × 3 × 2
+(C) 3 × 4 × 2
+(D) 3 × 3 × 2
+[第 17 題] 使用2 個SR 正反器（flip-flop）與3 個邏輯閘組成一時序電路（sequential circuit）如下圖所示，其
+中SR 正反器由NAND 閘所組成，A、B 表示狀態位元，X 表示外部輸入位元，Y 表示輸出位元，SA
+與RA 表示第一個SR 正反器之輸入位元，SB 與RB 代表第二個SR 正反器之輸入位元，CLK 表示時
+脈，試問該時序電路之輸出方程式為何？
+SB
+A
+B
+SA
+C
+C
+RB
+RA
+B
+CLK
+Y
+X
+(A) Y = (A ⊕ X) + B
+(B) Y = (A ⊗ X) + B
+(C) Y = (A + X) ⊕ B
+(D) Y = (A + X) ⊗ B
+[第 18 題] (126.25)10 轉換至二進制表示法的結果為何？
+(A) (111100.10)2
+(B) (111110.10)2
+(C) (1111100.01)2
+(D) (1111110.01)2
+[第 19 題] 下列那一項記憶體定址模式最適用於跳躍指令（branch instruction）中用來表示目的位址（Target
+address）之用？
+(A) PC-relative addressing mode
+(B) Base addressing mode
+(C) Immediate addressing mode
+(D) Register addressing mode
+[第 20 題] 在Windows 上執行辦公室文書類的應用程式（如：word、excel）時，發現硬碟不停的在動作，此時
+最可能需要升級那一個系統元件？
+(A) 處理器時脈
+(B) 記憶體
+(C) 顯示卡
+(D) 螢幕解析度
+[第 21 題] 下列有關TLB（translation look-aside buffer）的敘述，何者錯誤？
+(A) 可以加快真實位址轉換成虛擬位址的時間
+(B) 一般而言，在環境切換（context switch）時要清空TLB
+(C) 若TLB hit，則本次存取時間會較TLB miss 者為快
+(D) 一般來說，有TLB 的機器會有較好的效能
+代號：5405
+頁次：6－4
+[第 22 題] 一反向器（Inverter）邏輯閘之輸出入訊號特性如下圖所示，其中VIH = 2.5 伏特、VIL = 1.2 伏特、
+VOH = 4.5 伏特、VOL = 0.4 伏特。則當該等輸出訊號用於該等輸入時，其高狀態雜訊容忍度（High-state
+Noise Margin）為何？
+Vdd
+Vdd
+VOH
+VIH
+VIL
+VOL
+[第 0 題] 0
+(a)輸入電壓範圍
+(b)輸出電壓範圍
+(A) 2.0 伏特
+(B) 1.3 伏特
+(C) 3.3 伏特
+(D) 0.8 伏特
+[第 23 題] 下列以C 程式語言撰寫之程式執行後產生之輸出為何？
+#include <stdio.h>
+double foo(int v)
+{
+return v/2;
+}
+int main()
+{
+int n = 10;
+double m;
+m = foo(n/2.0);
+printf("%f", m);
+return 0;
+}
+(A) 2.000000
+(B) 2.500000
+(C) 5.000000
+(D) 10.000000
+[第 24 題] 關於物件（object）與類別（class）之間的關聯性，下列敘述何者正確？
+(A) 類別（class）是物件（object）的實例（instance）
+(B) 物件（object）是類別（class）的實例（instance）
+(C) 物件（object）是其子類別（subclass）的祖先（ancestor）
+(D) 物件（object）是其子類別（subclass）的後代（descendant）
+[第 25 題] 下列以C 程式語言撰寫之程式執行後的輸出為何？
+#include <stdio.h>
+void set(int arr[], int size)
+{
+int i;
+for (i=0; i<size; i+=1)
+arr[i] =i;
+}
+int get(int arr[], int i)
+{
+return arr[i]/2;
+}
+int main()
+{
+int arr[10];
+set(arr, 10);
+printf("%d", get(arr, arr[get(arr, 7)]) );
+return 0;
+}
+(A) 1
+(B) 3
+(C) 5
+(D) 7
+代號：5405
+頁次：6－5
+[第 26 題] 在C 語言中，如何將變數（variable）s 的資料型別（data type）由整數（integer）轉換成浮點數
+（floating-point）？
+(A) (float)s
+(B) s(float)
+(C) float(s)
+(D) (s)float
+[第 27 題] 假設在C 或C++語言中宣告以下陣列：int array[3][2][2] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12}；試問
+array[2][1][0]的值為何？
+(A) 5
+(B) 7
+(C) 9
+(D) 11
+[第 28 題] 下列何者為2 的補數(11100100)2 所表示的十進位數？
+(A) -28
+(B) -27
+(C) 27
+(D) 28
+[第 29 題] 執行下列C 語言程式後，產生的輸出為何？
+#include <stdio.h>
+main() {
+int S = 0, i;
+for( i = 1; i < 10; i++) {
+S +=i;
+i++;
+}
+printf(“%d\n”, S);
+}
+(A) 55
+(B) 45
+(C) 25
+(D) 編譯程式會產生錯誤，無法執行
+[第 30 題] 下列以C++程式語言撰寫之程式執行後的輸出為何？
+#include <iostream>
+using namespace std;
+class P {
+public:
+void foo() { cout << 'P'; }
+};
+class C : public P {
+public:
+void foo() { cout << 'C'; }
+};
+int main()
+{
+P p; C c;
+P *pc = &c;
+P &rc = c;
+p.foo();
+c.foo();
+pc->foo();
+rc.foo();
+return 0;
+}
+(A) PCPP
+(B) PPPP
+(C) PCCC
+(D) CCCC
+[第 31 題] 下列以C 程式語言撰寫之程式執行後產生之輸出為何？
+int y[4] = {6, 7, 8, 9};
+int *ptr = y + 2;
+printf("%d\n", ptr[ 1 ]);
+(A) 6
+(B) 7
+(C) 8
+(D) 9
+代號：5405
+頁次：6－6
+[第 32 題] 在資料庫系統中，為了避免系統發生故障（failure）後造成資料錯亂，通常會備有預防措施的回復機制。
+試問下列基於交易紀錄做回復處理（log-based recovery）的機制可能遇到的情況之敘述，何者錯誤？
+(A) 在停電或斷電情況下導致的系統當機，電腦主記憶體的內容會因斷電而消失，影響目前正在執行
+的交易，和儲存在工作區和緩衝區的交易資料
+(B) 在系統故障（failure）後的回復時，如果某個交易的「開始」和「結束」紀錄都出現在紀錄檔（log）
+中，表示這筆交易已經完成，但尚未寫入資料庫，因此必須重新處理（redo）這筆交易，讓這筆交
+易進到資料庫中
+(C) 在系統故障後的回復時，如果某個交易的「開始」紀錄出現在紀錄檔中，表示這筆交易已經開始，
+因此必須重新處理這筆交易，讓這筆交易進到資料庫中
+(D) 系統故障有可能發生在執行系統回復動作的時間點
+[第 33 題] 下列何項機制使得記憶體與I/O 裝置進行資料傳輸時，CPU 必須一直等待I/O 裝置準備好才能進行
+資料傳輸？
+(A) Programmed I/O
+(B) Interrupt-driven I/O
+(C) DMA
+(D) Isolated I/O
+[第 34 題] 以下有關資訊安全的敘述何者錯誤？
+(A) 雜湊函數（hash function）可以用以儲存密碼檔案，可以避免系統管理人員或其他人員窺視密碼
+(B) 傳訊人使用其私密金鑰（private key）將原始訊息的摘要（digest）進行加密，即得到此訊息的數
+位簽章（digital signature）
+(C) RSA 公開金鑰加密法是一種絕對安全（unconditionally secure）的加密法
+(D) 數位信封（digital envelop）的觀念就是使用收訊人的公開金鑰（public key）對某些機密資料作加
+密，收訊人收到後再使用自己的私密金鑰（private key）解密而讀取資料
+[第 35 題] 以下有關於磁碟陣列（redundant array of inexpensive disks, RAID）的敘述，何者錯誤？
+(A) RAID 是一種資料即時備援與復原技術
+(B) RAID 0 可以在磁碟機損毀時復原資料
+(C) RAID 3 利用同位元（parity）技術復原資料
+(D) RAID 6 可以在兩個磁碟機同時損毀時復原資料
+[第 36 題] 以下有關數位憑證（Digital Certificate）撤銷（Revocation）的描述，何者錯誤？
+(A) 用戶的密鑰遺失會造成認證機構（Certification Authority, CA）撤銷用戶的憑證
+(B) CA 發現簽發的憑證發給錯誤的用戶，會撤銷該憑證
+(C) 使用者只需要檢查憑證是否過期，不須核對憑證是否已被撤銷
+(D) CA 會用憑證撤銷串列（Certificate Revocation List, CRL）來記錄所有已撤銷而尚未到期的憑證
+[第 37 題] IP 安全通訊協定（Internet Protocol Security, 簡稱IPSec）包含那個運作協定？
+(A) IKE（Internet Key Exchange）
+(B) HMAC（Hash Message Authentication Code）
+(C) PPTP（Point-to-Point Tunneling Protocol）
+(D) VPN（Virtual Private Network）
+[第 38 題] 以下何者不是公開金鑰基礎建設（Public Key Infrastructure, PKI）所提供的安全保障？
+(A) 不可否認性（non-repudiation）
+(B) 鑑定性（authentication）
+(C) 完整性（integrity）
+(D) 透通性（transparency）
+[第 39 題] 在短時間內發動多台主機，傳送大量封包至特定主機的攻擊方法稱為：
+(A) 分散式阻斷服務（DDoS）
+(B) 後門程式
+(C) 開機型病毒
+(D) 木馬病毒
+[第 40 題] 下列關於智慧財產權（Intellectual Property Right）的敘述，何者錯誤？
+(A) 電腦程式為一種著作物，受著作權的保護
+(B) 電腦程式是可專利的法定標的
+(C) 小圖像（icon）與電腦字型的（type font）不是可專利的法定標的
+(D) 文字、圖片、影音、動畫等素材都是著作，必須要經過權利人的授權才能利用

@@ -1,0 +1,195 @@
+代號：37940
+頁次：4－1
+110年公務人員高等考試三級考試試題
+類
+科：資訊處理
+科
+目：程式語言
+考試時間：2 小時
+座號：
+※注意：※禁止使用電子計算器。
+注：不必抄題，作答時請將試題題號及答案依照順序寫在試卷上，於本試題上作答者，不予計分。
+本科目除專門名詞或數理公式外，應使用本國文字作答。
+一、語意分析（Semantics Analysis）對於程式語言的正確執行非常重要。
+※以下是Java 和C++程式，請說明程式編譯、執行結果與其原因，以及
+程式指令之意義或影響。（18 分）
+⑴Java 程式
+static void test1(){
+int n;
+int [] x = new int[n];
+}
+⑵Java 程式
+static void test2(){
+int n=0;
+int [] x = new int[n];
+}
+⑶Java 程式
+static void test3(){
+int n=0;
+int [] x = new int[n];
+x[0]=0;
+}
+⑷C++程式
+void test4(){
+int n;
+int x[n];
+}
+⑸C++程式
+void test5(){
+int n=0;
+int x[n];
+x[0] =0;
+}
+⑹C++程式
+void test6(){
+int n=0;
+int *x = new int[n];
+x[0] =0;
+}
+注：請說明Java 與C++語言在陣列宣告上的語意分析的方法，與其優缺
+點。（7 分）
+代號：37940
+頁次：4－2
+二、程式驗證的應用。
+※請說明「測試驅動發展方法（Test Driven Development, TDD）」的概念
+及優點。（7 分）
+注：有一MySort 類別的方法int[] binarySort(int data[])，將陣列data 內的
+資料由小到大排序後回傳，請依據TDD 的概念設計測試案例。（10 分）
+請以Java/JUnit 語言完成以下測試程式（I）~（II）。（8 分）
+@Test
+public void testBinarySort(MySort
+（I）
+){
+int[] source = {2, 3, 5, 9, 12, 7};
+int[] target = obj.binarySort(source);
+for(int i=0; i<source.length-1; i++){
+assertTrue(target[i] <
+（II）
+);
+}
+}
+三、建構股票交易資料庫（Stock），請寫出SQL 指令。
+客戶表格（Customer）
+客戶編號（cid）
+[整數、主鍵]
+[自動增加]
+客戶姓名（cname）
+[少於10 字元可變字串]
+客戶帳戶餘額
+（balance）
+客戶融資餘額
+（margin）
+[整數、非空值]
+證券交易表格（StockTrade）
+[整數、非空值]
+客戶編號（cid）
+[整數、非空值]
+交易編號
+（id）
+證券編號
+（sid）
+證券每股購入價格
+（price）
+證券購入股數
+（share）
+[整數、主鍵]
+[自動增加]
+[整數、非空值]
+[整數、非空值]
+[整數、非空值]
+※造出Customer, StockTrade 表格。（10 分）
+CREATE TABLE Customer ( _____________________ );
+CREATE TABLE StockTrade ( _____________________ );
+注：查詢客戶姓名是"Tom"所有購買股票編號與購入總股數。（5 分）
+撰寫Store Procedure，造出一個暫時的資料表Report，含兩個整數資
+料欄位（證券編號sid, 證券價格price）；加入10 筆資料，再根據證券
+價格由小到大排序，查詢列出此10 筆資料。（10 分）
+delimiter $$
+CREATE PROCEDURE x()
+BEGIN
+DECLARE i INT DEFAULT 1;
+____________________
+END$$
+代號：37940
+頁次：4－3
+四、程式例外處理的設計對於資訊系統的可靠性非常重要。
+※請完成以下C++程式（I）~（V）指令，處理兩數相除的例外狀況，使
+輸出為：（15 分）
+Exception:empty
+Exception:not a number
+Quotient:Exception:divided by zero
+Quotient:2.4
+#include <iostream>
+#include <exception>
+#include <string.h>
+#define N 10
+using namespace std;
+class EmptyException:public exception {
+public:
+virtual const char* what()const throw(){
+（I）
+;
+}
+};
+class NotNumberException:public exception {
+public:
+virtual const char* what()const throw(){
+(II)
+;
+}
+};
+class DividedByZeroException:public exception {
+public:
+virtual const char* what()const throw(){
+(III)
+;
+}
+};
+int valid(const char x[N]){
+int result=0;
+if(strlen(x)==0)throw EmptyException();
+for(int i=0; i<strlen(x); i++){
+if(!isdigit(x[i]))
+throw NotNumberException();
+result =
+(IV)
+;
+}
+return result;
+}
+double quotient(int n1, int n2){
+if(
+(V)
+)
+throw DividedByZeroException();
+return static_cast<double>(n1/n2);
+}
+代號：37940
+頁次：4－4
+void test(const char x1[N], const char x2[N]){
+int n1, n2;
+try {
+n1=valid(x1);
+n2=valid(x2);
+cout<<"Quotient:"<<quotient(n1, n2);
+}
+catch(EmptyException &e){
+cout<<"Exception:"<< e.what();
+}
+catch(NotNumberException &e){
+cout<<"Exception:"<< e.what();
+}
+catch(DividedByZeroException &e){
+cout<<"Exception:"<< e.what();
+}
+cout<<endl;
+}
+int main(){
+test("","");
+test("a","12");
+test("10","0");
+test("12","5");
+return 0;
+}
+注：請說明使用try-catch 與if-else，處理例外狀況的優缺點。（5 分）
+請說明C++與Java 在try-catch 中finally 設計的異同與其理由。（5 分）

@@ -1,0 +1,101 @@
+全一張 
+（正面）
+104年公務人員高等考試三級考試試題 
+代號：26840
+類  科： 資訊處理
+科  目： 程式語言
+考試時間： 2 小時 
+座號：          
+※注意： ※禁止使用電子計算器。 
+注：不必抄題，作答時請將試題題號及答案依照順序寫在試卷上，於本試題上作答者，不予計分。
+一、請就解譯方式（組譯、直譯、編譯）、程式結構（程序導向、物件導向）、標記文
+字（是、否）等特性，分類說明程式語言C, CSS, C#, HTML, Java, PHP, Python, SQL 
+的特性。請繪製表格作答。（25 分）
+二、請使用如下的BNF 語法規則（S 為起始符號）：（20 分） 
+  S → NP VP | VP 
+  NP → ADJ NP | N 
+  VP → ADV VP | V NP | V 
+  N → 考 | 校 | 評鑑 | 成績 
+  V → 通過 | 獲得 | 成功 | 失敗 
+  Adj → 高 | 普 | 特 | 好 | 壞 
+  Adv → 一定 | 可能  
+繪製⑴特校可能通過評鑑 
+  ⑵普考一定獲得好高成績 
+相關推導過程的Parse Tree。
+三、假設現有如下兩張資料表用來存放考生個人訊息及其成績，考生個人訊息，包括代
+號（TesterID）、姓名（Name），成績（Grade）則有五種科目（1 中文、2 英文、
+3 數學、4 自然、5 社會）及成績的等級有三種（ABC 三種）。請使用SQL 回應如
+下的問題。（每小題5 分，共20 分）
+Tester
+Grade
+TesterID
+TesterID  (FK)
+SubjectID
+Name 
+GradeData 
+Subject
+※請列出中文成績為A 所有考生的代號及姓名。 
+注：請列出各科不同成績等級的個數，個數使用別名numCount 來表示，如中文A5, 
+中文B2, …。 
+加入資料TesterID 6 名為Oscar Lin 的考生資料及其成績（中文A, 英文A, 數學
+C, 自然B, 社會A）。 
+修改TesterID 5 考生的數學成績為A。
+（請接背面）
+全一張 
+（背面）
+104年公務人員高等考試三級考試試題 
+代號：26840
+類  科： 資訊處理
+科  目： 程式語言
+四、請使用物件導向程式語言（C#或Java），設計一具門禁功能的智慧卡管理資訊系統。
+系統應依如下的class diagram 建立相關的類別資訊。（35 分）
+SmartCard
+-cardID: String
+-issueDate: String
+-issueOrg: Organization
+#getCardID(): String
+#getIssueDate(): String
+#getIssueOrg(): Organization
+#setCardID(String): void
+#setIssueDate(String): void
+#setIssueOrg(Organization): void
++nowDateToString(): String
++toString():String
+Security 
+SMsecurity 
+-date: String
+-securityList: List 
+-enterExit: EnterExit
++SMsecurity() 
++Security()
++SMsecurity(String, Organization) 
++Security(EnterExit)
++getDate(): String
++addInfo(EnterExit): void 
++getEnterExit(): EnterExit
++addInfo(String, EnterExit):void 
++setData(EnterExit): void
++addInfo(Security):void 
++setData(String, EnterExit): void
++toString(): String 
++toString(): String
+z 所有的類別變數皆為private，SMsecurity 類別繼承自抽象類別SmartCard 
+z 發卡單位Organization、進出入狀況EnterExit，請分別使用enum 的格式來表示 
+z 記錄進出入狀況，日期資料若未提供，則填入目前系統的日期時間 
+z 一張智慧卡，會有多次的進出入記錄，資料值應存放於List 線性資料結構中 
+z 改寫系統的toString()方法後，執行如下的測試動作 
+ SMsecurity sms = new SMsecurity("SM001", Organization.NewTaipeiMRT); 
+ sms.addInfo("2015/06/15 18:36:01", EnterExit.Enter); 
+ sms.addInfo("2015/06/15 20:16:01", EnterExit.Exit); 
+ sms.addInfo("2015/06/20 18:20:01", EnterExit.Enter); 
+ sms.addInfo(EnterExit.Exit); 
+ /* for Java */ System.out.println(sms.toString()); 
+ /* for C# */ Console.WriteLine(sms.ToString()); 
+ 應能產生類似如下的結果 
+ 
+ *****Smart card SM001 (6/21/2015 10:38:38 PM, NewTaipeiMRT) 
+ -----Enter and Exit information: 
+ (2015/06/15 18:36:01, Enter) 
+ (2015/06/15 20:16:01, Exit) 
+ (2015/06/20 18:20:01, Enter) 
+ (6/21/2015 10:38:38 PM, Exit)

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingStart="20dp"
+    android:paddingEnd="20dp"
+    android:paddingTop="20dp"
+    android:paddingBottom="@dimen/bottom_safe_padding"
+    android:fitsSystemWindows="true"
+    android:gravity="center_horizontal"
+    android:background="#FAFAFA">
+
+    <!-- 姓名輸入區（連線前顯示）-->
+    <LinearLayout
+        android:id="@+id/layoutNameInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#FFFFFF"
+        android:padding="16dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🏆 全國線上模擬考"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="請輸入您的姓名（將顯示於排行榜）"
+            android:textSize="14sp"
+            android:textColor="#757575"
+            android:layout_marginBottom="8dp"/>
+
+        <EditText
+            android:id="@+id/etUserName"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:hint="姓名 / 暱稱"
+            android:inputType="text"
+            android:textSize="16sp"
+            android:paddingStart="12dp"
+            android:layout_marginBottom="12dp"/>
+
+        <Button
+            android:id="@+id/btnConnect"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:text="連線進入考場"
+            android:textSize="16sp"/>
+    </LinearLayout>
+
+    <!-- 入場已截止提示（截止後顯示）-->
+    <LinearLayout
+        android:id="@+id/layoutEntryClosed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="24dp"
+        android:background="#FFEBEE"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🚫 入場已截止"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#C62828"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="本場考試已超過入場截止時間，無法加入。"
+            android:textSize="14sp"
+            android:textColor="#C62828"
+            android:gravity="center"/>
+    </LinearLayout>
+
+    <!-- 考場等待區（連線後顯示）-->
+    <LinearLayout
+        android:id="@+id/layoutExamRoom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tvExamTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="考場載入中..."
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/tvStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="連線中..."
+            android:textColor="#666666"
+            android:textSize="14sp"
+            android:layout_marginBottom="20dp"/>
+
+        <!-- 開考倒數 -->
+        <TextView
+            android:id="@+id/tvCountdownLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="距離開考還有"
+            android:textSize="16sp"
+            android:textColor="#757575"/>
+
+        <TextView
+            android:id="@+id/tvCountdownTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="--:--"
+            android:textSize="64sp"
+            android:textColor="@android:color/holo_red_dark"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- 入場截止倒數（考試開始後顯示）-->
+        <TextView
+            android:id="@+id/tvEntryDeadlineLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="13sp"
+            android:textColor="#E65100"
+            android:layout_marginBottom="20dp"/>
+
+        <Button
+            android:id="@+id/btnStartExam"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="進入考場"
+            android:enabled="false"
+            android:textSize="18sp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

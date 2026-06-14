@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:background="#FAFAFA">
+
+    <!-- 標題列 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:background="#FFFFFF"
+        android:elevation="3dp">
+
+        <ImageButton
+            android:id="@+id/btnExamCategoryBack"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@android:drawable/ic_media_previous"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="返回"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="📋 選擇考試類別"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#212121"
+            android:paddingStart="8dp"/>
+    </LinearLayout>
+
+    <!-- 說明文字 -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="請選擇要查看的考試類型"
+        android:textSize="14sp"
+        android:textColor="#757575"
+        android:gravity="center"
+        android:paddingTop="24dp"
+        android:paddingBottom="8dp"/>
+
+    <!-- Loading 提示 -->
+    <TextView
+        android:id="@+id/tvCategoryLoadingHint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="⏳ 資料載入中…"
+        android:textSize="13sp"
+        android:textColor="#1565C0"
+        android:gravity="center"
+        android:paddingBottom="4dp"
+        android:visibility="gone"/>
+
+    <!-- 按鈕區域 -->
+    <LinearLayout
+        android:id="@+id/layoutCategoryButtons"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:paddingStart="32dp"
+        android:paddingEnd="32dp">
+
+        <Button
+            android:id="@+id/btnCategorySenior"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:text="🏛 高　考"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#1565C0"
+            android:layout_marginBottom="16dp"/>
+
+        <Button
+            android:id="@+id/btnCategoryJunior"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:text="📘 普　考"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#2E7D32"
+            android:layout_marginBottom="16dp"/>
+
+        <Button
+            android:id="@+id/btnCategoryLocal3"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:text="📗 地方特考三等"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#E65100"
+            android:layout_marginBottom="16dp"/>
+
+        <Button
+            android:id="@+id/btnCategoryLocal4"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:text="📙 地方特考四等"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#6A1B9A"/>
+
+    </LinearLayout>
+
+</LinearLayout>

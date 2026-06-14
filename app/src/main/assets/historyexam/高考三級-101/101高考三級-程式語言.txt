@@ -1,0 +1,173 @@
+全四頁
+101年公務人員高等考試三級考試試題 
+代號：36240
+第一頁
+類  科： 資訊處理 
+科  目： 程式語言 
+考試時間： 2 小時 
+座號：
+※注意： ※禁止使用電子計算器。 
+注：不必抄題，作答時請將試題題號及答案依照順序寫在試卷上，於本試題上作答者，不予計分。
+一、給定下列的BNF 語法規則（小寫字母x, y, z 為終端符號，大寫字母為非終端符號，
+S 為起始符號，ε代表空字串）：
+S → AB | CD | E 
+A → xAy | ε 
+B → zB | ε 
+C → xC | ε 
+D → yDz | ε 
+E → xEz | F 
+F → yF | ε 
+※我們可以使用以上語法規則，推導出字串xyz，但推導過程不唯一。請畫出三棵
+可推導出xyz 的剖析樹（parse tree）。（9 分） 
+注：請列出所有長度為6，且可由以上語法規則推導出的字串。（10 分）
+二、考慮下列C 程式：
+#include<stdio.h> 
+int f(void) { 
+ 
+ static int x = 10; //第注：小題 
+ 
+ x++; 
+ 
+ return x; 
+} 
+int main(void) { 
+ 
+ int j; 
+ 
+ for (j = 0; j < 5; j++) { 
+ 
+  
+printf("Value of f(): %d\n", f()); 
+ 
+ } 
+ 
+ return 0; 
+}
+※上列程式的執行結果為何？（10 分） 
+注：C 語言中，一個變數的領域（scope）與生命期（lifetime）可以是不同的，請以
+上列函數f 中的變數x，來解釋這句話。（10 分）
+（請接第二頁）
+全四頁
+101年公務人員高等考試三級考試試題 
+代號：36240
+第
+頁
+ 二
+類  科： 資訊處理 
+科  目： 程式語言
+三、以下Java 程式片段試圖定義兩個有繼承關係的類別（classes），Parent 與Child，以
+及5 個print 方法（註解中標示的A, B, C, D, E）：
+class Parent { 
+  
+ public void print() {  // A 
+   
+System.out.println( "In Parent" ); 
+ } 
+ public void print( String message ) {  // B 
+   
+System.out.println( "In Parent" + '\t' + message ); 
+ } 
+} 
+class Child extends Parent {   
+ public void print( int value ) {  // C 
+   
+System.out.println( "In Child" + '\t' + value ); 
+ } 
+ public void print( String message ) {  // D 
+   
+System.out.println( "In Child" + '\t' + message ); 
+ } 
+ public int print() {  // E 
+   
+System.out.println( "In Child" ); 
+   
+return 5; 
+ } 
+}
+※多載（overloading）與覆寫（overriding）是關於print 方法的兩個不同的機制，請
+以上列程式中定義的5 個print 方法，說明那幾個是覆寫？那幾個是多載？為什
+麼？（請以A, B, C, D, E 方式作答）（15 分） 
+注：上列程式定義的2 個類別的5 個print 方法中，那一個的型態部分會造成編譯錯誤？
+為什麼？（6 分）
+（請接第三頁）
+全四頁
+101年公務人員高等考試三級考試試題 
+代號：36240
+第
+頁
+ 三
+類  科： 資訊處理 
+科  目： 程式語言
+四、請回答下列關於例外處理（exception handling）的問題：
+※許多程式語言（例如：C++、Java 與JavaScript）都有例外處理機制：try-catch 敘
+述與throw 敘述。請簡述這兩個敘述的差別。（8 分） 
+注：下列Java 程式的執行結果為何？（12 分）
+class FooException extends Exception {} 
+ class ExceptionQuestion { 
+  public void aMethod() throws FooException { 
+   try { 
+    System.out.println( "In aMethod" ); 
+    throw new FooException(); 
+  } catch ( FooException error ) { 
+    System.out.println( "in first catch" ); 
+    throw new FooException(); 
+  } finally { 
+    System.out.println( "Finally" ); 
+  } 
+ } 
+  public static void main( String[] args ) { 
+   try { 
+    System.out.println( "Start" ); 
+    ExceptionQuestion x = 
+      
+new ExceptionQuestion(); 
+    x.aMethod(); 
+    System.out.println( "After method" ); 
+  } catch ( FooException e1 ) { 
+    System.out.println( "In handler 1" ); 
+  } catch ( Exception e2 ) { 
+    System.out.println( "In handler 2" ); 
+  } 
+  System.out.println( "End" ); 
+ } 
+}
+（請接第四頁）
+全四頁
+101年公務人員高等考試三級考試試題 
+代號：36240
+第
+頁
+ 四
+類  科： 資訊處理 
+科  目： 程式語言
+五、請回答下列Web 網頁應用的問題：
+※下列網頁除內容外，也包含CSS（cascading style sheet）指令與JavaScript 程式碼。
+請說明此網頁在瀏覽器的呈現效果（可繪圖說明），並解釋當按下網頁內的按鈕
+（Add）時，網頁會有什麼變化。（10 分）
+<html> 
+ <head> 
+   <title>Foo</title> 
+   <style type="text/css"> 
+     li { color : red } 
+   </style> 
+ 
+   <script> 
+    function exec() { 
+      var ul = document.getElementById("list"); 
+      var li = document.createElement("li");  
+      var txt = document.createTextNode("Second"); 
+      li.appendChild(txt); 
+      ul.appendChild(li);  
+    } 
+   </script> 
+ </head> 
+ <body > 
+    <ul id="list"> 
+      <li>First 
+    </ul> 
+    <input type="button" name="Add" value="second" onclick="exec()"> 
+ </body> 
+ </html>
+注：我們在製作網頁時，除了HTML 外，我們也可同時使用CSS、DOM（domain 
+object model）與JavaScript。請說明四者所扮演的角色（彼此如何搭配與運作），
+可以用上列網頁為例來說明。（10 分）

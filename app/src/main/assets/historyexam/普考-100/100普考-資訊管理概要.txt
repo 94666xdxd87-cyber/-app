@@ -1,0 +1,22 @@
+100年公務人員普通考試試題
+代號：44130
+類  科： 資訊處理
+科  目： 資訊管理概要
+考試時間： 1 小時30 分
+座號：
+※注意： ※禁止使用電子計算器。
+注：不必抄題，作答時請將試題題號及答案依照順序寫在試卷上，於本試題上作答者，不予計分。
+全一頁
+一、何謂主管資訊系統（Executive Information System）或主管決策支援系統（Executive
+Support System）？其主要特色為何？（25 分）
+二、何謂長尾效應（long-tail effect）？長尾效應和電子商務或網際網路有何關係？請舉
+例說明企業如何發揮長尾效應的價值？（25 分）
+三、有研究指出，企業對資訊科技（IT）的投資有相當高的比例是失敗的。請舉例說明
+IT 投資的主要風險有那些？（15 分）
+四、何謂顧客關係管理（customer relation management）系統？系統的主要價值或目標為
+何？其主要的功能模組有那些？（15 分）
+五、名詞解釋：請簡要說明下列名詞的意義。（每小題5 分，共20 分）
+※ASP（application service provider）
+注：DRM（digital right management）
+ITG（information technology governance）
+Metcolfe’s Law

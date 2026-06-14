@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:fitsSystemWindows="true"
+    android:background="#F5F5F5"
+    android:paddingStart="32dp"
+    android:paddingEnd="32dp"
+    android:paddingTop="32dp"
+    android:paddingBottom="@dimen/bottom_safe_padding">
+
+    <!-- App 標題 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="📚 學習助手"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="#212121"
+        android:layout_marginBottom="12dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="請選擇練習模式"
+        android:textSize="15sp"
+        android:textColor="#757575"
+        android:layout_marginBottom="48dp"/>
+
+    <!-- API Key 狀態按鈕 -->
+    <Button
+        android:id="@+id/btnLauncherApiKey"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:text="🔑 設定 API Key ⚠️"
+        android:textSize="14sp"
+        android:textColor="#E53935"
+        android:backgroundTint="#FFF8E1"
+        android:layout_marginBottom="32dp"/>
+
+    <!-- 英文練習按鈕 -->
+    <Button
+        android:id="@+id/btnEnglish"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:text="📖  英文練習"
+        android:textSize="20sp"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#1565C0"
+        android:layout_marginBottom="20dp"/>
+
+    <!-- 申論題按鈕 -->
+    <Button
+        android:id="@+id/btnEssay"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:text="✏️  申論題"
+        android:textSize="20sp"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#2E7D32"/>
+
+</LinearLayout>

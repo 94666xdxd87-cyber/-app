@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:background="#FAFAFA">
+
+    <!-- 標題列 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:background="#FFFFFF"
+        android:elevation="3dp">
+
+        <ImageButton
+            android:id="@+id/btnPastExamBack"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@android:drawable/ic_media_previous"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="返回"/>
+
+        <TextView
+            android:id="@+id/tvPastExamPageTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="📄 歷屆考古題"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#212121"
+            android:paddingStart="8dp"/>
+
+        <Button
+            android:id="@+id/btnPastExamAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:text="＋ 手動新增"
+            android:textSize="12sp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#1565C0"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"/>
+    </LinearLayout>
+
+    <!-- 匯入進度列（預設隱藏） -->
+    <LinearLayout
+        android:id="@+id/layoutImporting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        android:background="#FFF9C4"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginEnd="10dp"/>
+
+        <TextView
+            android:id="@+id/tvImportStatus"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="⏳ 正在匯入考古題…"
+            android:textSize="13sp"
+            android:textColor="#F57F17"/>
+    </LinearLayout>
+
+    <!-- 固定篩選狀態列（固定模式時顯示，例如「高考  113年」） -->
+    <TextView
+        android:id="@+id/tvCurrentFilter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textSize="14sp"
+        android:textColor="#1565C0"
+        android:textStyle="bold"
+        android:background="#E3F2FD"
+        android:gravity="center"
+        android:visibility="gone"/>
+
+    <!-- 篩選列：年份 + 科目（一般模式時顯示，固定模式隱藏） -->
+    <LinearLayout
+        android:id="@+id/layoutFilterBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:background="#F5F5F5">
+
+        <Spinner
+            android:id="@+id/spinnerPastExamYear"
+            android:layout_width="0dp"
+            android:layout_height="44dp"
+            android:layout_weight="1"
+            android:layout_marginEnd="6dp"
+            android:background="@android:drawable/btn_default"/>
+
+        <Spinner
+            android:id="@+id/spinnerPastExamSubject"
+            android:layout_width="0dp"
+            android:layout_height="44dp"
+            android:layout_weight="1.4"
+            android:background="@android:drawable/btn_default"/>
+    </LinearLayout>
+
+    <!-- 搜尋列 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:paddingTop="6dp"
+        android:paddingBottom="6dp"
+        android:gravity="center_vertical"
+        android:background="#FFFFFF">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🔍 "
+            android:textSize="15sp"/>
+
+        <EditText
+            android:id="@+id/etPastExamSearch"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:hint="搜尋題目關鍵字…"
+            android:inputType="text"
+            android:maxLines="1"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:background="@android:drawable/editbox_background"/>
+    </LinearLayout>
+
+    <!-- 重新匯入按鈕 -->
+    <Button
+        android:id="@+id/btnReimport"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:text="🔄 重新從檔案匯入考古題"
+        android:textSize="12sp"
+        android:textColor="#616161"
+        android:backgroundTint="#EEEEEE"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="2dp"/>
+
+    <!-- 分隔線 -->
+    <View android:layout_width="match_parent" android:layout_height="1dp"
+        android:background="#E0E0E0"/>
+
+    <!-- 空狀態 -->
+    <TextView
+        android:id="@+id/tvPastExamEmpty"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="尚無考古題"
+        android:textSize="15sp"
+        android:textColor="#9E9E9E"
+        android:visibility="gone"/>
+
+    <!-- 考古題列表 -->
+    <ListView
+        android:id="@+id/pastExamListView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="#E0E0E0"
+        android:dividerHeight="1dp"
+        android:paddingBottom="@dimen/bottom_safe_padding"
+        android:clipToPadding="false"/>
+
+</LinearLayout>

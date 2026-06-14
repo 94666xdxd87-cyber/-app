@@ -1,0 +1,71 @@
+全一張 
+（正面）
+102年公務人員高等考試三級考試試題 
+代號：36240
+類  科： 資訊處理 
+科  目： 程式語言 
+考試時間： 2 小時 
+座號：          
+※注意： ※禁止使用電子計算器。 
+注：不必抄題，作答時請將試題題號及答案依照順序寫在試卷上，於本試題上作答者，不予計分。
+一、請回答下列程式語言的問題： 
+※就程式語言來說，什麼是Object-Oriented languages? Functional languages? Logic 
+languages? Script languages?（12 分） 
+注：從上述※的四種語言中，除Logic languages 外，每種語言各舉兩個現存的語言。
+（6 分） 
+最近語言的發展中，像Functional languages 與Script languages，都逐漸引進物件
+導向性質（OO），就這兩類語言，各舉一個近來發展出且具有OO 性質的語言。
+（2 分）
+二、考慮下述用類似C 語言的語法寫出的程式： 
+void swap(int a, int b) { 
+   int temp; 
+   temp = a; 
+   a = b; 
+   b = temp;} 
+void main() { 
+   int value = 1, list[4] = {2, 3, 4, 5}  //Array list is list[1..4] 
+   swap(value, list[1]); 
+   swap(list[1], list[2]); 
+   swap(value, list[value])} 
+根據以下的參數傳遞（parameter passings）模式，逐一列出在程式執行完畢之後的
+value 與list 值： 
+※Passed by value? （5 分） 
+注：Passed by reference? （5 分） 
+Passed by name?（5 分）
+三、根據每一個元素（element）包含16 個英文字母的circular queue，當用長度m 的
+陣列（array）來實作使用JAVA 語言寫出下列兩個方法的完整定義： 
+※Enqueue（10 分） 
+注：Dequeue（10 分）
+（請接背面）
+全一張 
+（背面）
+102年公務人員高等考試三級考試試題 
+代號：36240
+類  科： 資訊處理 
+科  目： 程式語言
+四、對C#與JAVA 的concurrency 而言： 
+※C#的thread 可以是actor thread 嗎？JAVA 的呢？（5 分） 
+注：C#的thread 可以被非同步呼叫嗎？JAVA 的呢？（5 分） 
+C#的sleep method 與JAVA 的sleep method 有何不同？（5 分）
+五、考慮下述Prolog 程式： 
+ancestor (x, x). 
+ancestor(x, y) :- ancestor(z, y), parent(x, z) 
+parent(Allen, John). 
+用一個subgoal 的搜尋樹（search tree），描述此Prolog 程式在執行查詢： 
+ancestor(Allen, X)時的執行步驟。（10 分）
+六、考慮下述的Scheme 程式： 
+(define A 
+(lambda () 
+  (let* ((x 2) 
+      (C (lambda (P) 
+         (let  ((x 4)) 
+          (P)))) 
+      ( D (lambda () 
+          x)) 
+      (B (lambda () 
+          (let  ((x3)) 
+           (C D))))) 
+     
+(B) ))) 
+※這程式列印什麼東西？（10 分） 
+注：如果Scheme 使用dynamic scoping 和shallow binding，它會印出什麼？（10 分）

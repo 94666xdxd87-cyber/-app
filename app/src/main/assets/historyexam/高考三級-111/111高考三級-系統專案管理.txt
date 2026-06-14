@@ -1,0 +1,29 @@
+代號：37260
+頁次：1－1
+111年公務人員高等考試三級考試試題
+類
+科：資訊處理
+科
+目：系統專案管理
+考試時間：2 小時
+座號：
+※注意：※禁止使用電子計算器。
+注：不必抄題，作答時請將試題題號及答案依照順序寫在試卷上，於本試題上作答者，不予計分。
+本科目除專門名詞或數理公式外，應使用本國文字作答。
+一、請解釋何謂COTS（Commercial Off-The-Shelf），並請說明倘系統開發人
+員或專案管理人員決定採用COTS 來開發新系統，那麼他們在系統設計
+上需考慮的因素有那些？另請討論COTS 系統整合時可能會發生那些
+問題。（25 分）
+二、請解釋何謂網站可靠度工程（Site Reliability Engineering，簡稱SRE）？
+另請說明SRE 與軟體工程（Software Engineering）的關係及SRE 與
+DevOps 之間的差異。（25 分）
+三、美國學者巴瑞·勃姆（Barry W. Boehm）曾提出建構成本模型（Constructive
+Cost Model，簡稱COCOMO）與建構成本模型II（Constructive Cost Model
+II，簡稱COCOMO II），請說明COCOMO 與COCOMO II 之間的差異
+性，另請詳細說明COCOMO II 的各子模型及其在系統開發或專案管理
+上的用途。（25 分）
+四、A 公司為國內某大型企業，其原本只運用敏捷方法（Agile Method）於公
+司內部小型資訊系統的開發，假設A 公司規劃在未來將敏捷方法擴展
+（Scaling）至大型資訊系統的開發，請針對擴展敏捷方法說明其觀點
+（Perspective），並從實務面上具體分析與討論其可行性（Feasibility）。
+（25 分）

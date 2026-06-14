@@ -1,0 +1,70 @@
+106年公務人員高等考試三級考試試題 
+代號：26040 
+全一張
+（正面）
+類
+科：資訊處理 
+科
+目：程式語言 
+考試時間：2 小時 
+座號：
+※注意： ※禁止使用電子計算器。 
+注：不必抄題，作答時請將試題題號及答案依照順序寫在試卷上，於本試題上作答者，不予計分。 
+本科目除專門名詞或數理公式外，應使用本國文字作答。
+一、請宣告一個 Add class，內容包含以下特性：（25 分） 
+A. 
+Private member "A"，型態為integer，並透過constructor 初始化為0。 
+B. 
+Private member "B"，型態為integer，並透過constructor 初始化為0。 
+C. 
+Private method "print"，將member "A"、"B"相加後顯示在console 中，且無回傳
+值。 
+D. 
+Public method "add(int A, int B)"，須達成以下行為： 
+i. 將參數A 的value 儲存到member "A"。 
+ii. 將參數B 的value 儲存到member "B"。 
+iii. 呼叫Private method "print"，印出結果。 
+iv. 無回傳值。 
+public class Add { 
+        // code here 
+}
+二、程式語言中，指標（Pointers）是一個非常強大有用的工具，但是也可能為程式帶來
+Dangling Pointer 和Memory Leakage 問題。（25 分） 
+※請使用下列的C 程式碼說明何謂Dangling Pointer 和Memory Leakage 問題，並解
+釋其發生原因。
+int *p1, *p2, *p3, *p4; 
+p1 = (int*) malloc (sizeof(int)); 
+p2 = p1; 
+free p1;   
+p3 = (int*) malloc (sizeof(int)); 
+p4 = (int*) malloc (sizeof(int)); 
+p3 = NULL;
+注：請從Compiler 的角度，說明什麼方法可以解決這兩個問題？
+（請接背面）
+106年公務人員高等考試三級考試試題 
+代號：26040 
+全一張
+（背面）
+類
+科：資訊處理 
+科
+目：程式語言
+三、下列是以C，Java，Javascript，C++，PHP 及JSP 六種語言撰寫存取陣列（array）的
+程式片斷，請問此程式片斷執行後，會產生什麼結果？如果有結果錯誤，錯誤訊息
+為何？各用什麼方法可避免錯誤？請寫出完整的程式來說明你的方法。（25 分）
+C: int a[] = {0, 1, 2, 3}; for(i=0; i<=sizeof(a); i++) printf("%d", a[i]); 
+Java: int[] a = {0, 1, 2, 3}; for(i=0; i<=a.length; i++) System.out.print(a[i]); 
+Javascript: var a = [0, 1, 2, 3]; for(i=0; i<=a.length; i++) document.write(a[i]); 
+C++: int a[] = {0, 1, 2, 3}; for(i=0; i<=sizeof(a); i++) printf("%d", a[i]); 
+PHP: $a = array(0,1,2,3); for($i=0; $i<=count($a); $i++) echo $a[$i]; 
+JSP: int[] a = {0, 1, 2, 3}; for(i=0; i<=a.length; i++) out.print(a[i]);
+四、下列為秀出4 x 3 表格的html 網頁，請以此網頁為基礎，用Javascript 程式完成所需
+的兩個js 檔案：data.js 及function.js。其中function.js 只包括函式ShowTable(I,J)及
+data.js 只包括所需的二維陣列宣告。一定要用Javascript 的for 迴圈完成函式
+ShowTable(I,J)。（25 分）
+<HTML><HEAD><TITLE>4x3 Table Example</TITLE>
+<SCRIPT SRC=Data.js></SCRIPT>
+<SCRIPT SRC=Function.js></SCRIPT>
+</HEAD><BODY>
+<SCRIPT LANGUAGE=JavaScript> ShowTable(4,3); </Script>
+</BODY></HTML>

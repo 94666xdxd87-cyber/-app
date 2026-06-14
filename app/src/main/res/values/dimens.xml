@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 底部安全邊距：讓底部按鈕遠離系統手勢導航列 -->
+    <dimen name="bottom_safe_padding">16dp</dimen>
+    <!-- 頂部安全邊距：避開打孔螢幕 / 劉海 -->
+    <dimen name="top_safe_padding">8dp</dimen>
+</resources>

@@ -1,0 +1,45 @@
+全一頁
+104年公務人員高等考試三級考試試題 
+代號：26820
+類  科： 資訊處理
+科  目： 資通網路
+考試時間： 2 小時 
+座號：          
+※注意： ※禁止使用電子計算器。 
+注：不必抄題，作答時請將試題題號及答案依照順序寫在試卷上，於本試題上作答者，不予計分。
+一、一個橋接網路（bridged network）通常使用許多橋接器（bridges）將多個區域網路
+互相連結起來。而且為了提高網路可靠度，橋接器之間的鏈結（links）可能會形成
+許多迴路（loops）。橋接器中通常都會實作IEEE 802.1D spanning tree algorithm 擴
+張樹演算法。說明： 
+※橋接網路有迴路會造成什麼問題？（5 分） 
+注：擴張樹的目的為何？（5 分） 
+一個橋接網路找出其擴張樹的程序為何？（10 分）
+二、TCP 協定的壅塞控制（congestion control ）使用了AIMD （Additive Increase 
+Multiplicative Decrease）機制。說明： 
+TCP
+※
+連線的傳送端如何偵測網路發生壅塞的情形？（5 分） 
+注：何謂壅塞視窗Congestion window？（5 分） 
+何謂AIMD 機制？（10 分） 
+何謂Slow Start 機制？（5 分）
+三、IEEE 802.11 無線區域網路使用的是CSMA/CA（Carrier Sense Multiple Access with 
+Collision Avoidance）協定來傳送封包。當一台無線主機想要傳送封包時，會先去偵
+測是否有其他封包正在無線通道上傳送。說明： 
+※如果無線通道上沒有傳送（channel idle），此主機會如何處理？（5 分） 
+注：如果無線通道上已有傳送（channel busy），此主機會如何處理？（10 分） 
+CSMA/CA
+
+協定使用了避免衝撞（collision avoidance）的機制。那封包傳送時是
+否還會發生衝撞？為什麼？（10 分）
+四、網際網路（Internet）所使用的IP（Internet Protocol）協定是以盡力式（best effort）
+的方式傳輸封包。也就是說IP 所提供的服務是不可靠的。說明： 
+※使用IP 協定在傳送封包可能發生那些事情使得其服務不可靠？（5 分） 
+注：何謂路由協定（routing protocol）？（5 分） 
+路由器（router）收到一個封包後，是如何將該封包送往目的地主機（destination 
+host）？（5 分）
+五、TCP SYN flooding 是一種著名的網路阻斷服務攻擊（DoS）。說明： 
+※何謂阻斷服務攻擊（Denial of Service）？（5 分） 
+注：分散式阻斷服務攻擊（Distributed Denial of Service）的模式為何？（5 分） 
+SYN flooding
+
+攻擊的運作原理為何？（5 分）

@@ -1,0 +1,45 @@
+106年公務人員高等考試三級考試試題 
+代號：26060 
+全一頁
+類
+科：資訊處理 
+科
+目：系統專案管理
+考試時間：2 小時 
+座號：
+※注意： ※禁止使用電子計算器。 
+注：不必抄題，作答時請將試題題號及答案依照順序寫在試卷上，於本試題上作答者，不予計分。 
+本科目除專門名詞或數理公式外，應使用本國文字作答。
+一、有一家軟體公司承接了一個應用軟體系統（Application Software, AP）的開發專案，
+需於一年內開發完成交付。此專案規劃投入300 萬元，所需交付AP 之功能性大小為
+30 功能點數（Function Points, FP）。當專案進行至第六個月時，進行專案里程碑審查，
+經所收集之資料顯示出：此專案共已投入100 萬元，並已完成12 FP 的開發。此公司
+是採用實獲值管理方法（Earned Value Management, EVM），請問： 
+※何謂實獲值管理方法？（5 分） 
+注：請計算此專案在第六個月時之時程差異（Schedule Variance, SV）與時程績效指標
+值（Schedule Performance Index, SPI）？（4 分） 
+請計算此專案在第六個月時之成本差異（Cost Variance, CV）與成本績效指標值
+（Cost Performance Index, CPI）？（4 分） 
+請計算此專案在第六個月時之時間差異（Time Variance, TV）？（4 分） 
+請依據注：與所計算出SPI 與CPI 值，評估此專案目前進度與成本使用狀況？（4 分） 
+如果依照目前的進度與成本支用比率下來完成此專案，請計算此專案之完工成本
+差異（Cost Variance at Completion）與完工時間差異（Time Variance at Completion）？
+（4 分）
+二、軟體開發專案之範疇（Scope）、成本（Cost）、時間（Time）與品質（Quality）彼此
+是會有互相影響的關係，請回答下列問題： 
+※請說明這四個變數間的相互影響關係。（15 分） 
+注：請說明軟體開發「專案階段初期與後期」與「專案規模大小」對上述關係的影響。
+（10 分）
+三、國內已有部分政府機關之資訊中心通過CMMI-ACQ 認證，請回答下列有關CMMI-ACQ
+之問題： 
+※何謂CMMI-ACQ？其主要用途為何？（5 分） 
+注：請說明CMMI-ACQ 模式的表述方法（Representation）有那些？其差異為何？（10 分） 
+CMMI-ACQ V1.3 版之成熟度等級（Maturity Level , ML）第二級下共有九個流程領
+域（Process Area, PA），請舉出其中五個流程領域與其目的（Purpose）為何？（10 分）
+四、軟體開發專案管理者須具備「軟體需求工程（Software Requirements Engineering, SRE）」
+知識，請回答下列有關SRE 的問題： 
+※何謂使用者需求（User Requirements）？何謂系統需求（System Requirements）？（5 分） 
+注：何謂功能性需求（Functional Requirements）？何謂非功能性需求（Non-Functional 
+Requirements）？非功能性需求一般會包含那些？（10 分） 
+請說明非功能性需求常用的指標（Metrics）有那些？（10 分）
+（請接背面）

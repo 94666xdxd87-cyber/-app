@@ -1,0 +1,118 @@
+112年公務人員普通考試試題
+類
+科：資訊處理
+科
+目：程式設計概要
+考試時間：1 小時30 分
+座號：
+※注意：※禁止使用電子計算器。
+注：不必抄題，作答時請將試題題號及答案依照順序寫在試卷上，於本試題上作答者，不予計分。
+本科目除專門名詞或數理公式外，應使用本國文字作答。
+代號：44650
+頁次：3－1
+一、根據以下C程式碼，回答下列問題：
+[第 1 題] 2
+[第 3 題] 4
+[第 5 題] 6
+[第 7 題] 8
+[第 9 題] 10
+[第 11 題] 12
+[第 13 題] 14
+[第 15 題] 16
+[第 17 題] 18
+[第 19 題] 20
+[第 21 題] 22
+[第 23 題] #include <stdio.h>
+void g(int *x, int *y) {
+*x = *y - 1;
+*y = *y - 2;
+printf("*x = %d, *y = %d\n", *x, *y);
+}
+void f(int *z, int *w) {
+int n = 13;
+g(w, &n);
+printf("*z = %d, *w = %d, n = %d\n", *z, *w, n);
+}
+int main() {
+int i = 21;
+int j = 5;
+int n = 137;
+f(&i, &j);
+printf("print 1: i = %d, j = %d, n = %d\n", i, j, n);
+g(&n, &n);
+printf("print 2: i = %d, j = %d, n = %d\n", i, j, n);
+return 0;
+}
+※請說明程式碼第8行至第12行中，每一行之運算子符號「*」及「&」操
+作所代表的意義。（10分）
+注：請問該程式碼執行後輸出的結果為何？（15分）
+代號：44650
+頁次：3－2
+二、根據以下C程式碼，回答下列問題：
+[第 1 題] 2
+[第 3 題] 4
+[第 5 題] 6
+[第 7 題] 8
+[第 9 題] 10
+[第 11 題] 12
+#include <stdio.h>
+int f(int a, int b){
+if (b==1) return a;
+else {
+int value = a + f(a, b-1);
+return value;
+}
+}
+int main() {
+printf("%d\n", f(5, 3));
+printf("%d\n", f(0, 0));
+}
+※請問那一行是此遞迴程式的中止條件？（5分）
+注：請說明第10行的輸出，以及其運作邏輯。（6分）
+請說明第11行的輸出，以及其運作邏輯。（7分）
+請說明函式f的主要功能，包含輸入參數與輸出結果的關係。（7分）
+三、關於搜尋法程式：
+※說明循序（Sequential）搜尋法，以及二元（Binary）搜尋法的優缺點。
+（8分）
+注：以下二元搜尋程式碼有部分錯誤，若要修正為正確程式，請說明「最少」
+需修改程式碼行數、原因與修改方法。（17分）
+[第 01 題] public class BinarySearch{
+[第 02 題] public int faultyBinarySearch(int[] arr, int x){
+[第 03 題] int l=0, r=arr.length-1;
+[第 04 題] int m=(l+r)/2;
+[第 05 題] while(l<=r){
+[第 06 題] m=(l+r)/2;
+[第 07 題] if(arr[m]==x) return m;
+[第 08 題] if(arr[m]>x) l=m+1;
+[第 09 題] if(arr[m]<x) r=m-1;
+[第 10 題] }
+[第 11 題] return -1;
+[第 12 題] }
+[第 13 題] }
+代號：44650
+頁次：3－3
+四、請依據以下Java程式碼回答下列問題：
+[第 01 題] import java.util.Scanner;
+[第 02 題] public class MyJavaCode {
+[第 03 題] public static void main(String[] args) {
+[第 04 題] Scanner in = new Scanner(System.in);
+[第 05 題] int a = in.nextInt();
+[第 06 題] Animal dog = new Dog();
+[第 07 題] dog.run(a);
+[第 08 題] dog.run();
+[第 09 題] }
+[第 10 題] }
+[第 11 題] 12
+class Dog extends Animal {
+[第 13 題] public void run(int units){
+[第 14 題] System.out.println("Dog's running speed is " + units);
+[第 15 題] }
+[第 16 題] public void run(){
+[第 17 題] System.out.println("Dog's default running speed is 20");
+[第 18 題] }
+[第 19 題] }
+※請說明Java中class、abstract class與interface之間的主要差異？（10分）
+注：請說明上述程式碼那幾行會產生編譯錯誤，以及錯誤的原因。（5分）
+不改變原1-19行程式碼順序的條件下，請修正問題注：之編譯問題，使之
+可以正常執行。修正不包含左右大括號「{}」，新增或修改之指令行數
+不可以超過3行。（10分）

@@ -1,0 +1,172 @@
+111年公務人員普通考試試題
+類
+科：資訊處理
+科
+目：程式設計概要
+考試時間：1 小時30 分
+座號：
+※注意：※禁止使用電子計算器。
+注：不必抄題，作答時請將試題題號及答案依照順序寫在試卷上，於本試題上作答者，不予計分。
+本科目除專門名詞或數理公式外，應使用本國文字作答。
+代號：44650
+頁次：4－1
+一、以下是完整的C#程式碼，請回答以下各小題執行的結果為何？
+（每小題10 分，共20 分）
+※
+internal class Program {
+static void Main(string[] args) {
+float p = 5.5f;
+int r = calc_square(p);
+Console.WriteLine(String.Format("Result:{0}", r));
+}
+static int calc_square (float param) {
+int result = (int)(param * param);
+return result;
+}
+}
+注：
+static void Main(string[] args) {
+float rate = 2.5f;
+float amount = 10f;
+computing(rate, ref amount);
+Console.WriteLine(
+String.Format("Rate: {0}, Amount: {1}", rate, amount));
+}
+static void computing(float rate, ref float amt) {
+rate *= 10;
+amt *= rate;
+}
+代號：44650
+頁次：4－2
+二、目前以瀏覽器為主的應用程式大多以JavaScript 進行前端程式的設計，
+請閱讀以下各小題程式碼，並回答問題。（每小題10 分，共20 分）
+※使用jquery 套件的JavaScript，請回答每一列程式碼的意義。
+[第 1 題] 2
+[第 3 題] 4
+[第 5 題] 6
+[第 7 題] 8
+[第 9 題] 10
+[第 11 題] 12
+[第 13 題] let iconList = [];
+for (const extId of fs.ls("/extension")) {
+let extension = fs.read(`/extension/${extId}/extension.js`);
+ext = eval(extension);
+iconList.push(fs.read(`/extension/${extId}/${ext.icon}`));
+}
+for (const [index, element] of Object.entries($("span .treeIcon"))) {
+if (typeof element === "object") {
+$(element).append(`<img src="${iconList[index]}" >`);
+}
+}
+注：以下程式碼請依執行先後說明執行的結果。
+[第 1 題] 2
+[第 3 題] 4
+[第 5 題] 6
+[第 7 題] 8
+[第 9 題] 10
+[第 11 題] 12
+[第 13 題] 14
+[第 15 題] 16
+[第 17 題] <button onclick="dialog()">Confirm</button>
+<p id="result"></p>
+<script>
+window.addEventListener('load', function () {
+alert('Hello!');
+})
+function dialog() {
+var message;
+if (confirm("Press a button!")) {
+message = "You pressed OK!";
+} else {
+message = "You pressed Cancel!";
+}
+document.getElementById("result").innerHTML = message;
+}
+</script>
+代號：44650
+頁次：4－3
+三、請使用C, C++, C#, Java 或Python 程式語言撰寫一支完整的程式將班級
+學生的百分制成績轉換為等第制成績，轉換的規則如下：（20 分）
+百分制成績
+等第制成績
+成績≥（平均數+2個標準差）
+A
+（平均數+1個標準差）≤成績<（平均數+2個標準差）
+B
+平均數≤成績<（平均數+1個標準差）
+C
+（平均數–1個標準差）≤成績<平均數
+D
+（平均數–2個標準差）≤成績<（平均數–1個標準差）
+E
+成績<（平均數–2個標準差）
+F
+程式執行需讓使用者輸入班級所有學生的百分制成績，成績以空白格隔
+開，程式再將班級的平均成績、變異數與標準差、每位學生的編號、百
+分制成績與等第制成績列印出。程式可使用所採用之程式語言的統計函
+數、模組或套件來求算平均成績、變異數與標準差，以下為程式執行之
+參考範例。（備註：斜體加外框線之整數為使用者所輸入，其餘皆為程式
+執行的輸出。）
+請輸入班級修課學生的百分制成績（以空白格隔開）：100 90 80 70 60 50
+[第 40 題] 30 20 10
+班級平均成績=55
+班級變異數成績=825
+班級標準差成績=28.72
+第1 位學生的百分制成績=100, 等第制成績=B
+第2 位學生的百分制成績=90, 等第制成績=B
+第3 位學生的百分制成績=80, 等第制成績=C
+第4 位學生的百分制成績=70, 等第制成績=C
+第5 位學生的百分制成績=60, 等第制成績=C
+第6 位學生的百分制成績=50, 等第制成績=D
+第7 位學生的百分制成績=40, 等第制成績=D
+第8 位學生的百分制成績=30, 等第制成績=D
+第9 位學生的百分制成績=20, 等第制成績=E
+第10 位學生的百分制成績=10, 等第制成績=E
+四、問卷常被使用來進行服務滿意度調查，以下數據是某單位資訊中心新系
+統使用的滿意度調查結果，數值為人次。請以Python 程式製作一張圓餅
+圖，圖上須顯示出百分比及標籤。（20 分）
+非常滿意
+：65
+滿意
+：97
+普通
+：103
+不滿意
+：45
+非常不滿意
+：51
+代號：44650
+頁次：4－4
+五、以下二小題是完整的物件導向程式碼，請回答以下各小題。
+（每小題10 分，共20 分）
+※以下為Python 完整程式碼，請回答執行的結果為何？
+class Employee:
+all = []
+def __init__(self, idno, first_name, last_name):
+self.id = idno
+self.first_name = first_name
+self.last_name = last_name
+Employee.all.append(self)
+def __repr__(self):
+return f"(ID={self.id}, Name={self.first_name} {self.last_name})"
+if __name__ == "__main__":
+e1 = Employee('001', 'Peter', 'Lee')
+e2 = Employee('002', 'Ann', 'Lo')
+print(Employee.all)
+注：以下為C#的類別程式碼，類別Employee 內的欄位不可以由非繼承的
+類別讀取或寫入，請檢視此程式是否可以正確執行？若無法正確執行
+的話，請寫出正確的程式碼。
+public abstract class Employee {
+private string id;
+private string name;
+private int age;
+public Employee() {
+}
+}
+public class Staff : Employee {
+public Staff(string _id, string _name, int _age) {
+this.id = _id;
+this.name = _name;
+this.age = _age;
+}
+}

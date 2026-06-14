@@ -1,0 +1,77 @@
+101年公務人員普通考試試題
+代號：44220
+類  科： 資訊處理
+科  目： 程式設計概要
+考試時間： 1 小時30 分
+座號：
+※注意： ※禁止使用電子計算器。
+注：不必抄題，作答時請將試題題號及答案依照順序寫在試卷上，於本試題上作答者，不予計分。
+（請接背面）
+全一張
+（正面）
+一、使用C 語言，寫一個叫做count()的函式，此函式有2 個參數，一個是整數陣列
+score，另一個是代表陣列大小的整數size。假設score 陣列的所有元素都有整數值，
+此函式將計算陣列內有多少個不同的數值，並將其傳回。（25 分）
+二、假設以C 語言做如下宣告：
+int test[ ] = {10,20,30,40,50,60,70,80,90,100};
+int *ptr = test;
+請回答下列式子的值是什麼？（每小題5 分，共20 分）
+※test[5] 注：*(test + 8) ptr[1+2] *(ptr + 7)
+三、一個簡化的龜兔賽跑系統有以下3 個類別，請以Java 語言撰寫這3 個類別的完整定
+義：（30 分）
+Animal 類別代表動物，是一個抽象類別（abstract class），它有1 個private 屬性
+name 與1 個protected 屬性speed，分別代表動物名稱與速度；有1 個public static
+常數DISTANCE，其值為1000，代表賽跑的總距離；它有一個無引數建構子（no-
+argument constructor），會將name 設定為“No Name”，將speed 設定為1；也有一
+個二引數建構子（two-argument constructor），會將name 與speed 分別設定為傳入
+之參數theName 與theSpeed；它也有1 個toString()方法會傳回動物名稱與速度合併
+後的字串；它有1 個time()的抽象方法（abstract method），用以計算動物跑完全程
+所需時間。
+Turtle 類別代表烏龜，是Animal 的衍生類別。它的無引數建構子會呼叫Animal 的
+無引數建構子；它的二引數建構子會呼叫Animal 的二引數建構子；它的time()方法
+會傳回烏龜跑完全程所需時間。它的toString()方法會先呼叫父類別的toString()以取
+得名稱與速度，並與time()所計算的時間，合併成一個字串後傳回。
+Rabbit 類別代表兔子，是Animal 的衍生類別。它有一個private 的屬性sleep，代表
+兔子在比賽開始後睡覺的時間。它有一個無引數建構子，會先呼叫Animal 的無引
+數建構子，然後將sleep 設定為0；它有一個三引數建構子，會先呼叫Animal 的二
+引數建構子，然後將sleep 設定為傳入之第3 個參數theSleep；它的time()方法會傳
+回兔子跑完全程所需時間，此時間需包含兔子睡覺的時間。toString()方法會先呼叫
+父類別的toString()以取得名稱與速度，並與sleep 時間，以及time()所計算的時間，
+合併成一個字串後傳回。
+101年公務人員普通考試試題
+代號：44220
+類  科： 資訊處理
+科  目： 程式設計概要
+全一張
+（背面）
+四、使用PHP 設計一個伺服器端的網頁，當使用者以瀏覽器開啟
+http://localhost/radiobutton.html，網頁將顯示“請選擇遞送方式：”，並以兩個選項按
+鈕（radio button），顯示“宅配”與“超商取貨”這兩種選項，最後並提供一個“提交”
+（submit）的按鈕，讓使用者提交其選取之結果給伺服器。當伺服器接收到網頁送回
+之選項資料後，會執行同一個資料夾內的radiobutton.php，並將使用者選取的遞送方
+式，加上前置詞“您選取的遞送方式是”後，在使用者的瀏覽器顯示出來。下列是
+radiobutton.html與radiobutton.php的不完整程式碼，請填入完整的程式碼。（25 分）
+//radiobutton.html
+<html>
+<head>
+<title>
+PHP with radio buttons
+</title>
+</head>
+<body>
+// 使用<form>元素以提供2 種遞送方式的選項按鈕給使用者
+</body>
+</html>
+//radiobutton.php
+<html>
+<head>
+<title>
+PHP with radio buttons
+</title>
+</head>
+<body>
+/* 填入必要的指令，將使用者選取的遞送方式，加上前置詞“您選取的遞送方
+式是”後，在使用者的瀏覽器顯示出來。
+*/
+</body>
+</html>

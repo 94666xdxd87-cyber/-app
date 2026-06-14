@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="#FAFAFA"
+    android:clipToPadding="false"
+    android:paddingBottom="@dimen/bottom_safe_padding">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/tvSetupTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="設定題目"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:paddingBottom="16dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="選擇 AI 模型："
+            android:textSize="15sp"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="4dp"/>
+
+        <Spinner
+            android:id="@+id/spinnerModel"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginBottom="16dp"
+            android:background="@android:drawable/btn_dropdown"/>
+
+        <!-- ── 弱點統計（僅 mode 7 顯示）── -->
+        <TextView
+            android:id="@+id/tvWeakStats"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:background="@color/card_bg"
+            android:textSize="13sp"
+            android:textColor="@color/text_secondary"
+            android:visibility="gone"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- ── 詞性選擇（mode 7 顯示）── -->
+        <TextView
+            android:id="@+id/tvWeakCategoryLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="選擇要搶救的詞性："
+            android:textSize="15sp"
+            android:visibility="gone"
+            android:layout_marginBottom="4dp"/>
+
+        <Spinner
+            android:id="@+id/spinnerWeakCategory"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:visibility="gone"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- ── 自訂比例（mode 6，或 mode 7 選「自訂比例混合」時顯示）── -->
+        <LinearLayout
+            android:id="@+id/layoutCustom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <!-- 此 TextView 文字由 Java 動態切換（一般自訂 / 弱點自訂）-->
+            <TextView
+                android:id="@+id/tvCustomWeakHint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="各詞性題數（總和需等於總題數）"
+                android:textSize="14sp"
+                android:layout_marginBottom="8dp"/>
+
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="horizontal" android:layout_marginBottom="8dp">
+                <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1" android:text="名詞：" android:gravity="center_vertical"/>
+                <EditText android:id="@+id/etNounCount"
+                    android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1" android:inputType="number" android:hint="0"/>
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="horizontal" android:layout_marginBottom="8dp">
+                <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1" android:text="動詞：" android:gravity="center_vertical"/>
+                <EditText android:id="@+id/etVerbCount"
+                    android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1" android:inputType="number" android:hint="0"/>
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="horizontal" android:layout_marginBottom="8dp">
+                <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1" android:text="副詞：" android:gravity="center_vertical"/>
+                <EditText android:id="@+id/etAdvCount"
+                    android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1" android:inputType="number" android:hint="0"/>
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="horizontal" android:layout_marginBottom="8dp">
+                <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1" android:text="形容詞：" android:gravity="center_vertical"/>
+                <EditText android:id="@+id/etAdjCount"
+                    android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1" android:inputType="number" android:hint="0"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- ── 題目數量（所有模式都有）── -->
+        <TextView
+            android:id="@+id/tvCountLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="題目數量："
+            android:textSize="15sp"
+            android:layout_marginBottom="4dp"/>
+
+        <EditText
+            android:id="@+id/etCount"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:inputType="number"
+            android:hint="請輸入題數"
+            android:layout_marginBottom="20dp"/>
+
+        <!-- ── 產生按鈕 ── -->
+        <Button
+            android:id="@+id/btnGenerate"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="產生題目"
+            android:textSize="16sp"/>
+
+        <!-- ── 讀取中 ── -->
+        <LinearLayout
+            android:id="@+id/layoutLoading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:visibility="gone"
+            android:layout_marginTop="16dp">
+
+            <ProgressBar
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:id="@+id/tvLoadingMsg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="AI 出題中，請稍候..."
+                android:gravity="center"
+                android:textSize="14sp"
+                android:paddingTop="8dp"/>
+        </LinearLayout>
+
+        <!-- ── 錯誤訊息 ── -->
+        <TextView
+            android:id="@+id/tvError"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#F44336"
+            android:gravity="center"
+            android:visibility="gone"
+            android:layout_marginTop="8dp"/>
+
+    </LinearLayout>
+</ScrollView>

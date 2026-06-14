@@ -1,0 +1,51 @@
+代號：38420
+頁次：1－1
+109年公務人員高等考試三級考試試題
+類
+科：資訊處理
+科
+目：資通網路
+考試時間：2小時
+座號：
+※注意：※禁止使用電子計算器。
+注：不必抄題，作答時請將試題題號及答案依照順序寫在試卷上，於本試題上作答者，不予計分。
+本科目除專門名詞或數理公式外，應使用本國文字作答。
+一、請比較說明下列各組名詞有何不同：（每小題5分，共20分）
+※OC-3和OC-3c
+注：transmission rate和propagation rate
+in-band signaling和out-of-band signaling
+connection oriented service和connectionless service
+二、請說明博碼調變（pulse code modulation, PCM）與取樣理論（sampling
+theory）的原理。（20分）
+三、依據項農理論（Shannon theory），欲使一條100 kHz的傳輸線達到T1載體
+（carrier）的傳輸速率（transmission rate），其信號雜訊比（signal-to-noise
+ratio, SNR）應為何？（附註：log102 = 0.301）（20分）
+四、請將下列無方向連接圖（undirected connected graph），依子題之說明，起
+始節點為節點0，建構一最小費用擴張樹（minimum cost spanning tree）。
+（註：圖中圓圈標示節點（node）號碼，連線（link）旁標示費用；作答
+時必須標示加入連線的順序）（每小題10分，共20分）
+※採用Kruskal’s algorithm不含任何限制條件。
+注：採用Kruskal’s algorithm含限制條件：每一分支（branch）最多含3段連線
+（link）。
+6
+20
+24
+2
+5
+22
+14
+28
+3
+10
+26
+12
+1
+4
+16
+18
+0
+Source node
+五、2020年5月台灣中油股份有限公司發生嚴重資安事件，請說明：（每小題10分，
+共20分）
+※本事件屬何種病毒的攻擊，請針對此類病毒說明之。
+注：面對該類病毒，是否有預防策略，理由為何？

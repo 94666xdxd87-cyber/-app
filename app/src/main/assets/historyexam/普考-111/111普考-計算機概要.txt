@@ -1,0 +1,264 @@
+111年公務人員普通考試試題
+類
+科：資訊處理
+科
+目：計算機概要
+考試時間：1 小時
+座號：
+※注意：※本試題為單一選擇題，請選出一個正確或最適當的答案。
+注：本科目共40 題，每題2.5 分，須用2B鉛筆在試卡上依題號清楚劃記，於本試題上作答者，不予計分。
+禁止使用電子計算器。
+代號：6446
+頁次：4－1
+[第 1 題] 對下列不同的微處理器架構，那一項不是採用平行運算的技術？
+(A) 動態管道排程（dynamic pipeline scheduling）
+(B) SIMD（Single Instruction stream, Multiple Data streams architecture）架構
+(C) 向量架構（vector architecture）
+(D) 純量架構（scalar architecture）
+[第 2 題] 有關分散式系統（distributed system）的敘述，下列何者錯誤？
+(A) 是透過網路連結來分工合作的一群電腦
+(B) 由分散在各處的電腦節點所組成的系統有助於提升可靠度
+(C) 資料有可能被多個電腦節點分享
+(D) 所有電腦節點必須具有相同的計算效能
+[第 3 題] 某個中央處理單元（Central Processing Unit, CPU）的外頻為500 MHz，其倍頻為2，此中央處理器內部運
+作的時脈速度（Clock Rate）是多少？
+(A) 250 MHz
+(B) 500 MHz
+(C) 1 GHz
+(D) 2 GHz
+[第 4 題] 下列那一位最早提出「程式和資料都應該儲存在電腦的記憶體」的概念？
+(A) 巴貝奇（Charles Babbage）
+(B) 圖靈（Alan Turing）
+(C) 馮紐曼（John von Neumann）
+(D) 萊布尼茲（Gottfried Leibniz）
+[第 5 題] 當程式被編譯完成後，程式內容根據不同的特性，如：全域變數與程式之指令，會被載入對應的記憶體區
+塊。下列那些區塊的容量大小，是程式在編譯時期即可決定？
+(A) 文字部分（text segment）、靜態數據（static data）
+(B) 靜態數據（static data）、動態數據（dynamic data）
+(C) 動態數據（dynamic data）、堆疊部分（stack segment）
+(D) 文字部分（text segment）、堆疊部分（stack segment）
+[第 6 題] 下列那一種方法無法用來處理管線化（Pipeline）CPU 所遭遇到的控制危障（Control Hazard）問題？
+(A) 資料前饋（Data Forwarding）
+(B) 分支預測（Branch Prediction）
+(C) 延遲分支（Delayed Branch）
+(D) 管線暫停（Stall）
+[第 7 題] 下列何者不是硬式磁碟機（hard disk drive）常見的資料傳輸介面？
+(A) SATA
+(B) PCIe
+(C) SCSI
+(D) SAS
+[第 8 題] 下列何者非周邊設備資料傳送時的可能處理模式？
+(A) Processor-Memory Bus
+(B) Polling
+(C) Interrupt-driven I/O
+(D) Direct Memory Access（DMA）
+[第 9 題] 計算機中使用那種記憶體來儲存短期執行的程式和資料？
+(A) 唯讀記憶體（read only memory）
+(B) 隨機存取記憶體（random access memory）
+(C) 可程式唯讀記憶體（programmable read only memory）
+(D) 可擦拭及可程式唯讀記憶體（erasable programmable read only memory）
+[第 10 題] 如果系統匯流排的寬度是32 bits，頻率是500 MHz，則該匯流排頻寬最高是多少？
+(A) 1 GB/s
+(B) 2 GB/s
+(C) 5 GB/s
+(D) 16 GB/s
+[第 11 題] 10110110 為下列何者10 進位數字的1 補數？
+(A) 182
+(B) -73
+(C) -54
+(D) -182
+代號：6446
+頁次：4－2
+[第 12 題] 十進位數字5，若以單精度32 位元IEEE754 浮點數系統表示，下列表示結果何者正確？
+(A) (0 1 0 0 0 0 0 0 1 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0)2
+(B) (0 1 0 0 0 0 0 0 1 0 1 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0)2
+(C) (0 1 0 0 0 0 0 0 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0)2
+(D) (0 1 0 0 0 0 0 0 1 1 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0)2
+[第 13 題] 電腦以位元（bits）的數值組合代表不同意涵，假設現在有65,500 個常用的中文字，至少需要幾個位元來
+表示常用的中文字數目？
+(A) 8
+(B) 16
+(C) 24
+(D) 32
+[第 14 題] 一個以r 為基數（radix）的數字系統，若運算式(245)r+(232)r=(521)r成立，則r 為：
+(A) 5
+(B) 6
+(C) 8
+(D) 16
+[第 15 題] 一般而言，下列那一項功能不會設計在算術邏輯單元（ALU）中，而是單獨設計？
+(A) A+B
+(B) A-B
+(C) A⊕B
+(D) A÷B
+[第 16 題] 若使用16 進位系統，分別儲存兩個整數數字(1 2 3 4)16 與(B C D E)16，將兩個整數數字相加後的結果，以
+相同進位系統儲存，加法運算結果為下列何者？
+(A) (B E 0 1)16
+(B) (C F 1 2)16
+(C) (E 0 1 4)16
+(D) (E 0 2 3)16
+[第 17 題] 簡化布林代數式(P+Q'+R')•(P+Q'+R)•(P+Q+R')的結果是：
+(A) (P'Q+R')
+(B) (P+Q'R')
+(C) (P'Q+R)
+(D) (PQ+R)
+[第 18 題] SR 正反器（SR flip-flop）在下列何種輸入下，無論目前狀態為何都會維持輸出不變？
+(A) SR=00
+(B) SR=01
+(C) SR=10
+(D) SR=11
+[第 19 題] 布林函數XY
+XZ
+YZ
+
+
+可化簡為：
+(A) XY
+YZ
+
+(B) XZ
+YZ
+
+(C) XY
+XZ
+
+(D)
+Y
+X
+YZ
+
+[第 20 題] 下列那一個邏輯運算，常被用來加速乘法運算？
+(A) AND
+(B) SHIFT
+(C) NOT
+(D) OR
+[第 21 題] 2021 年臺灣疫情發生初期，行政院政務委員唐鳳隨即帶領團隊開發簡訊實聯制，使疫情得以有效受到管
+控。簡訊實聯制主要是運用行動裝置的照相功能掃描QR 碼之後，再利用簡訊上傳店家代碼至後端資料庫。
+關於QR 碼的敘述，下列何者正確？
+(A) QR 碼的容錯能力分為4 個等級，最高等級的容錯可修正30%的字碼
+(B) QR 碼的四個角落各含有一個定位標記，用以確認條碼的位置及方向
+(C) QR 碼的尺寸僅與其容錯能力成正比，容錯能力越高，QR 碼尺寸越大
+(D) QR 碼可放入中文資訊，其編碼方式採用EASCII
+[第 22 題] 下列何者可用來證明公鑰（public key）擁有者的身分？
+(A) 訊息摘要（message digest）
+(B) 秘密金鑰（secret key）
+(C) 數位憑證（digital certificate）
+(D) 數位信封（digital envelope）
+[第 23 題] 下列那一個是最普及的編碼系統且僅需要七個位元（bits）即可儲存一個符號？
+(A) ASCII
+(B) EBCDIC
+(C) Big5
+(D) Unicode
+[第 24 題] 若執行以下的Python 程式碼，螢幕上的輸出結果依序為何？
+var1 = 4
+var2 = 7
+while var1<8:
+while var2>var1:
+print（var1+var2）
+var2=var2-1
+var1=var1+1
+(A) 11 11
+(B) 11 10 9
+(C) 11 10 9 12 11
+(D) 11 10 9 12 11 13
+代號：6446
+頁次：4－3
+[第 25 題] 軟體程序（software process）是生產軟體系統的一組相關活動。雖然有許多種不同的軟體程序，它們在某
+種形式上卻都必須包含四種基本的軟體工程活動。下列那一項活動不是這四種基本活動之一？
+(A) 軟體規格制定（software specification）
+(B) 軟體開發（software development）
+(C) 軟體測試（software testing）
+(D) 軟體演進（software evolution）
+[第 26 題] 若執行以下的Python 程式碼，螢幕上的輸出結果依序為何？
+var1 = 4
+var2 = 30
+var3 = 60
+var4 = var1 == 4 and var2 > 30 or var3 > 50
+var5 = var1 != 2 and not var2 > 26 and var3 >= 80
+print（var4, var5）
+(A) True True
+(B) True False
+(C) False True
+(D) False False
+[第 27 題] 使用下列數字序列：20、2、3、4、7、6、9、1、5、8，依序輸入建立一個二元搜尋樹（binary search tree），
+下列敘述何者錯誤？
+(A) 由根節點出發使用前序（preorder）方式走訪此二元搜尋樹，輸出為20, 2, 1, 3, 4, 7, 6, 5, 9, 8
+(B) 節點1 和節點3 的父節點相同
+(C) 節點6 位於節點9 的左子樹
+(D) 若最後再新增一個數字10，此二元搜尋樹的高度不變
+[第 28 題] 有關程式語言多型（polymorphism）敘述，下列何者正確？
+(A) 在Java 中，可以用繼承（Inheritance）方式來實現多型；但不能用介面（Interface）方式來實現多型
+(B) 在Java 中，可以用介面方式來實現多型；但不能用繼承方式來實現多型
+(C) 在Java 中，繼承方式和介面方式兩者都可以實現多型
+(D) 在Java 中，不論用繼承方式或介面方式都不能實現多型
+[第 29 題] 有關多媒體應用的敘述，下列何者錯誤？
+(A) 藍光光碟容量大，單層容量為30 G
+(B) 電子紙張可節省紙張浪費，並可儲存大量書籍
+(C) Podcast 利用附有RSS 的軟體讓使用者訂閱並下載音訊
+(D) 手機是一種多媒體應用
+[第 30 題] 關於交錯訊號掃描（Interlacing）、漸進式掃描（Progressive scan）中的敘述，下列何者錯誤？
+(A) 使用交錯訊號掃描（Interlacing）的畫面較容易閃爍，且畫質相對不精細
+(B) 交錯訊號掃描（Interlacing）有分奇偶兩個圖場
+(C) 漸進式掃描（Progressive scan）不分奇偶圖場，只有一個圖場一次掃描完整個影格
+(D) 使用漸進式掃描（Progressive scan）會使影格較不穩定且易閃爍
+[第 31 題] 若一張灰階圖之像素點分布如左圖，在進行影像處理後，其像素點分布結果為右圖，此灰階圖最可能經過
+什麼處理？
+(A) 直方圖匹配（Histogram matching）
+(B) 直方圖閥值平衡（Balanced histogram thresholding）
+(C) 直方圖均化（Histogram equalization）
+(D) 仿射轉換（Affine Transformation）
+代號：6446
+頁次：4－4
+[第 32 題] 下列關於HSV 色彩空間的敘述，何者錯誤？
+(A) HSV 分別代表色相、飽和度、明度
+(B) 色相表示顏色的基本屬性
+(C) 飽和度是指色彩的純度，越高表示顏色越亮
+(D) 明度是指色彩的亮度，越低表示亮度越暗
+[第 33 題] 一個長1920 像素，寬1080 像素，使用RGB 三原色所繪製的畫面，其每個畫面共傳輸2332800 Bytes 的數
+據，此畫面的色深（color depth）為多少bits？
+(A) 3
+(B) 24
+(C) 4
+(D) 8
+[第 34 題] 有關電荷耦合器（Charge Coupled Device）的敘述，下列何者錯誤？
+(A) 利用光電效應（photo-electronic effect）把光轉化成強弱不等的電流
+(B) 是一個線性（linear）的光度量器
+(C) 應用於數位照相機及攝影機
+(D) 用以將數位訊號類比化成類比訊號
+[第 35 題] 一個字母表A={a0,a1,a2,a3}，其中a0 的出現機率0.5，a1 的出現機率0.25，a2 的出現機率0.125，a3 的出
+現機率0.125，若以霍夫曼編碼（Huffman Coding）得到A 字母表的碼簿（codebook），下列何者可為正確
+答案？
+(A) a0=00，a1=01，a2=10，a3=11
+(B) a0=0，a1=10，a2=110，a3=111
+(C) a0=0，a1=01，a2=011，a3=0111
+(D) a0=0，a1=1，a2=00，a3=11
+[第 36 題] 下列何者是多媒體通訊系統中，負責傳輸錯誤保護機制？
+(A) 資料編碼與解碼（Source coding and decoding）
+(B) 調變與解調（Modulation and Demodulation）
+(C) 通道編碼與解碼（Channel coding and decoding）
+(D) 多工與通訊網路（Multiplexer and Communication Network）
+[第 37 題] 根據取樣理論，對音源取樣需使用適當「取樣頻率」方能記錄完整聲波，有一音源頻率為15 kHz，能清晰
+表示此音訊的最低取樣頻率為何？
+(A) 60 Hz
+(B) 7.5 kHz
+(C) 15 kHz
+(D) 30 kHz
+[第 38 題] 傳播延遲（Propagation delay）為二進位輸入訊號改變其值時，從輸入傳遞到輸出轉變的延遲時間。以64
+位元來說，下列那一種加法器，其傳播延遲時間最長？
+(A) 前瞻進位加法器（Carry-Lookahead Adder）
+(B) 進位選擇加法器（Carry-Select Adder）
+(C) 進位儲存加法器（Carry-Save Adder）
+(D) 漣波進位加法器（Ripple-Carry Adder）
+[第 39 題] 由於人類對於亮度與彩度的敏感度不同，使用色彩空間YCbCr 的影像或視訊，其彩度分量可以使用次取樣
+（subsampling），在輕微影響影像品質的情況下來降低資料量。原來未做次取樣的影像（YCbCr 4：4：4）
+在經過YCbCr 4：2：0 次取樣後，其總像素點數為原始影像的幾倍？
+(A) 1
+(B) 2
+[第 3 題]
+(C) 2
+(D) 1
+[第 2 題] 40
+關於影像媒體，下列敘述何者正確？
+(A) 點陣圖是使用角度、座標、距離等參數來表示圖形
+(B) 向量式繪圖的影像較容易失真，但儲存空間小、處理速度較快
+(C) 點陣圖與向量圖屬於動態影像
+(D) 點陣圖用於需要精細細節的複雜繪圖

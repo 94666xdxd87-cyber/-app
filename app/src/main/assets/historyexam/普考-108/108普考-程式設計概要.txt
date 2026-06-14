@@ -1,0 +1,136 @@
+108年公務人員普通考試試題
+類
+科：資訊處理
+科
+目：程式設計概要
+考試時間：1 小時30 分
+座號：
+※注意： ※禁止使用電子計算器。
+注：不必抄題，作答時請將試題題號及答案依照順序寫在試卷上，於本試題上作答者，不予計分。
+本科目除專門名詞或數理公式外，應使用本國文字作答。
+代號：44550
+頁次：4－1
+一、Java 程式PreStars 會印出什麼結果？維持巢狀for 迴圈架構，小修
+PreStars，讓它印出以下的星星構圖。（25 分）
+[第 1 題] 2  public class PreStars
+[第 3 題] {
+4     public static void main(String[] args)
+5     {
+6        for (int i=1; i<=5; i++) {
+7
+for (int j=1; j<=i; j++)
+8
+System.out.print('*');
+9
+System.out.println();
+10        }
+11     }
+[第 12 題] }
+**********
+*********
+********
+*******
+******
+*****
+****
+***
+**
+*
+代號：44550
+頁次：4－2
+二、下列為Reverse class 的程式規範與其執行結果，試以遞迴（recursive）
+的方式完成副程式reverse(int[] arr, int x)，撰寫時，必須使用相同的參數
+名稱與資料型態。reverse(int[] arr, int x)會回傳一個倒過來擺置的整數
+串：arr[n-1],  arr[n-2], … arr[x+1], arr[x]，假設arr 內共有n 個元素，而
+且x <= n。（25 分）
+[第 2 題] public class Reverse
+[第 3 題] {
+[第 4 題] public static String reverse(int[] arr, int x)
+[第 5 題] {
+[第 6 題] 7      }
+[第 8 題] 9      public static void main(String[] args)
+[第 10 題] {
+[第 11 題] int[] intArr = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+[第 12 題] String results = reverse(intArr, 2);
+[第 13 題] System.out.println(results);
+[第 14 題] System.out.println(reverse(intArr, 7));
+[第 15 題] }
+[第 16 題] }
+[第 10 題] 9 8 7 6 5 4 3
+[第 10 題] 9 8
+三、下列Python 程式的執行結果為何？（15 分）
+list = [2,2,3,7,7,7,9,9,10,10]
+count = 1
+current = list[0]
+for i in list:
+if i > current :
+list[count] = i
+count += 1
+current = i
+last = len(list)
+if last > count:
+for i in range(count, last):
+list.pop()
+print("count = ", count)
+print("list = ", list)
+代號：44550
+頁次：4－3
+四、數學中複數是實數的延伸，複數通常表示為a+bi 或(a, b)，其中a, b 為實
+數，分別稱為複數的實部與虛部，i 為虛數單位，且i2=-1。複數的加、
+減、乘、除運算定義如下：
+(a+bi)+(c+di) = (a+c)+(b+d)i
+(a+bi)–(c+di) = (a–c)+(b–d)i
+(a+bi)*(c+di) = (ac-bd)+(ad+bc)i
+(a+bi)/(c+di) = ((ac+bd)/(c2+d2))+((bc-ad)/(c2+d2))
+試參考以下程式回答問題：（35 分）
+※此程式的列印結果為何？
+注：利用add()，在ComplexTest.java 中加入一行程式以印出
+“x + y = (3.0, 3.0)”
+於Complex.java 中撰寫
+public Complex division（Complex right）
+回傳資料型態與參數命名必須分別為Complex 與right。
+利用division()，在ComplexTest.java中算出y=(2, 2)的倒數（如果y’*y=1
+則稱 y’為y 的倒數），並列印出有意義的訊息。
+撰寫public String standardForm()以印出複數的另一表示法a+bi。注意
+0.0+bi 要表示為bi；a+0.0i 要表示為a；a+1.0i 要表示為a+i。
+[第 2 題] public class Complex
+[第 3 題] {
+[第 4 題] private double real;
+[第 5 題] private double imaginary;
+[第 6 題] 7     public Complex()
+[第 8 題] {
+[第 9 題] this(0.0, 0.0);
+[第 10 題] }
+[第 11 題] public Complex(double r, double i)
+[第 12 題] {
+[第 13 題] real = r;
+[第 14 題] imaginary = i;
+[第 15 題] }
+[第 16 題] public Complex add(Complex right)
+[第 17 題] {
+[第 18 題] return new Complex(real + right.real,
+[第 19 題] imaginary + right.imaginary);
+代號：44550
+頁次：4－4
+[第 20 題] }
+[第 21 題] public Complex subtract(Complex right)
+[第 22 題] {
+[第 23 題] return new Complex(real - right.real,
+[第 24 題] imaginary - right.imaginary);
+[第 25 題] }
+[第 26 題] public String toString()
+[第 27 題] {
+[第 28 題] return String.format("(%.1f, %.1f)", real, imaginary);
+[第 29 題] }
+[第 30 題] } //  end class Complex
+[第 2 題] public class ComplexTest
+[第 3 題] {
+4     public static void main(String[] args)
+5     {
+6       Complex x = new Complex(1, 1);
+7       Complex y = new Complex(2, 2);
+8
+9       System.out.printf("x = %s%n", x.toString());
+[第 10 題] System.out.printf("y = %s%n", y);
+[第 11 題] }
+[第 12 題] } //  end class ComplexTest

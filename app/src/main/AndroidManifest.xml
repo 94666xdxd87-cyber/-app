@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyApplication"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+
+        <!-- ★ 入口：模式選擇頁 -->
+        <activity android:name=".LauncherActivity" android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- 英文練習主頁 -->
+        <activity android:name=".english.MainActivity" android:exported="false" />
+
+        <!-- 英文練習子頁面 -->
+        <activity android:name=".english.SetupActivity"      android:exported="false" android:screenOrientation="portrait" />
+        <activity android:name=".english.QuizActivity"       android:exported="false" android:screenOrientation="portrait" />
+        <activity android:name=".english.ResultActivity"     android:exported="false" android:screenOrientation="portrait" />
+        <activity android:name=".english.HistoryActivity"    android:exported="false" android:screenOrientation="portrait" />
+        <activity android:name=".english.WordBankActivity"   android:exported="false" android:screenOrientation="portrait" />
+        <activity android:name=".english.OnlineExamActivity" android:exported="false" android:screenOrientation="portrait" />
+        <activity android:name=".english.RankingActivity"    android:exported="false" android:screenOrientation="portrait" />
+        <activity android:name=".english.QuizReviewActivity" android:exported="false" android:screenOrientation="portrait" android:label="題目回顧" />
+        <activity android:name=".english.WordExplainActivity" android:exported="false" android:screenOrientation="portrait" android:label="AI 單字講解" />
+
+        <!-- 申論題模組 -->
+        <activity android:name=".essay.EssayMainActivity"   android:exported="false" android:screenOrientation="portrait" android:label="申論題練習" />
+        <activity android:name=".essay.EssayEditActivity"    android:exported="false" android:screenOrientation="portrait" android:label="申論題記錄" />
+        <activity android:name=".essay.EssayDetailActivity"  android:exported="false" android:screenOrientation="portrait" android:label="申論題詳情" />
+        <activity android:name=".essay.PastExamActivity"         android:exported="false" android:screenOrientation="portrait" android:label="歷屆考古題" />
+        <activity android:name=".essay.QuestionDetailActivity"    android:exported="false" android:screenOrientation="portrait" android:label="題目詳細" />
+        <activity android:name=".essay.ExamCategoryActivity"    android:exported="false" android:screenOrientation="portrait" android:label="考試類別" />
+        <activity android:name=".essay.PastExamYearActivity"    android:exported="false" android:screenOrientation="portrait" android:label="選擇年份" />
+
+    </application>
+</manifest>

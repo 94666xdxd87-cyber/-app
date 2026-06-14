@@ -1,0 +1,87 @@
+105年公務人員普通考試試題
+代號： 44450
+全一張
+（正面）
+類
+科： 資訊處理
+科
+目： 程式設計概要
+考試時間 ： 1 小時30 分
+座號：
+※注意： 禁止使用電子計算器。
+不必抄題，作答時請將試題題號及答案依照順序寫在試卷上，於本試題上作答者，不予計分。
+（請接背面）
+一、依據下方C 語言程式碼，請完成ㄧ布林（Bool）型態之函式Triangle( )，並填寫呼
+叫此一函式之程式碼。此一函式參數包含整數型態陣列Edge，Edge 陣列內含有三個
+代表三角形邊長之數值。請撰寫判斷此三個邊長是否可構築成為一個三角形之函式，
+函式運算後，依回傳結果分別顯示true 或false 値，分別代表能否構成三角形。（25 分）
+bool Triangle (/*請填寫函式參數*/){
+/*請填寫函式程式碼*/
+}
+int main(){
+int Give[3]={6,7,8};
+printf("%s\n",/*請填寫主程式程式碼*/?"true":"false" );
+}
+二、根據IEEE 754 二進位浮點數算術標準，請問下列C 語言程式碼執行後輸出為何？（25 分）
+int main(){
+float A = 100;
+float B = -125.53125;
+printf("%08X\n", *(unsigned int *) &A);
+printf("%08X\n", *(unsigned int *) &B);
+}
+三、觀察以下C++語言之程式，試回答下列問題：
+int main(){
+double a = 0.2 * 0.2, b = 0.04;
+if(a == b){ cout << "a = b" << endl; }
+else if(a < b){ cout << "a < b" << endl; }
+else{ cout << "a > b" << endl; }
+cout << a << endl << b << endl;
+} ※
+試問該程式之輸出為何？（10 分） 注：根據上題※
+之輸出為a = b、a < b 或a > b，請說明其原因？（15 分）
+105年公務人員普通考試試題
+代號：44450
+全一張
+（背面）
+類
+科：資訊處理
+科
+目：程式設計概要
+四、觀察以下C 語言之程式，回答下列問題： ※根據以下
+C 語言程式碼，試問執行結果輸出為何？（10 分） 注：
+承上題，根據Result 比對Source 陣列內容，試問此轉換目的為何？（15 分）
+int priority(char Operation){
+if (Operation == '+' || Operation == '-'){
+return 1; }
+else if (Operation == '*' || Operation == '/'){
+return 2; }
+else   { return 0; }
+}
+void Transform(char* Source, char* Result){
+char stack[50] = { '\0' };
+int i = 0, j = 0, top = 0;
+for (; Source[i] != '\0'; i++){
+if (Source[i] == '('){ stack[++top] = Source[i]; }
+else if (Source[i] == ')'){
+while (stack[top] != '(') {
+Result[j++] = stack[top--]; }
+top--;
+}
+else if (Source[i] == '*' || Source[i] == '/' ||
+Source[i] == '+' || Source[i] == '-'){
+while (priority(stack[top]) >=
+priority(Source[i])){
+Result[j++] = stack[top--]; }
+stack[++top] = Source[i]; }
+else
+Result[j++] = Source[i]; }
+while (top != 0){ Result[j++] = stack[top--]; }
+}
+int main(){
+char Source[50] = { " a-d+(b*e)/c" },
+Result[50] = { '\0' };
+Transform(Source, Result);
+for (int i = 0; Result[i] != '\0'; i++){
+printf("%c", Result[i]); }
+return 0;
+}

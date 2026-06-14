@@ -1,0 +1,41 @@
+全一頁
+101年公務人員高等考試三級考試試題 
+代號：36220
+類  科： 資訊處理 
+科  目： 電腦網路 
+考試時間： 2 小時 
+座號：
+※注意： ※禁止使用電子計算器。 
+注：不必抄題，作答時請將試題題號及答案依照順序寫在試卷上，於本試題上作答者，不予計分。
+一、※假設主機C 有個程序（process），含有UDP socket，其port 號碼為6789。假設
+另外兩部主機A 和B，均傳送一個UDP segment 到主機C 的號碼為6789 的port。
+請問這兩個segments 會連到主機C 的相同的socket 嗎？若是，主機C 如何分辨
+這兩個segments 來自不同的主機？（10 分） 
+注：一個應用程式，若使用UDP socket 來傳送資料，它有可能讓資料的傳送是可靠的
+（reliable data transfer）嗎？請說明你的理由。（10 分）
+二、※從網路層（network layer）的角度來說，可提供連結導向的服務（connection-
+oriented service）或非連結的服務（connectionless service）。提供連結服務的網路
+稱為virtual-circuit（VC）networks，而提供非連結服務的網路稱為datagram。
+請問兩者有何不同？（7 分） 
+注：從傳輸層（transport layer）的角度來說，可提供連結導向的服務（connection-
+oriented service）或非連結的服務（connectionless service）。請問兩者有何不同？
+（7 分） 
+就TCP over IP，分別從網路層以及傳輸層來說，是屬於上述那一種的服務組合？
+請簡述說明。（6 分）
+三、※CSMA/CD 與CSMA/CA 有何不同？為何在IEEE 802.11 的無線網路中，CD 不能
+適用？（10 分） 
+注：Slotted Aloha 是stable 的medium access control protocol 嗎？是或不是，均請解釋
+理由。（10 分）
+四、※假設一個具NAT 功能的Router，LAN 端接了三部主機，IP 分別為192.168.0.1，
+192.168.0.2，192.168.0.3，而Router 的LAN 端IP 為192.168.0.4，WAN 端的IP
+為126.13.89.67。 
+現這三部主機分別各有兩個TCP 連線到Web Server（IP 為128.119.40.86，port 80），
+請提供在這NAT translation table 上六個對應的entries。（10 分） 
+注：假設在一個P2P 的應用下的兩個使用者（Peer），Arnold 和Bernard。並假設
+Arnold 和Bernard 的電腦都在NAT 後面。你可以解釋如何設計一個方法，讓
+Arnold 的P2P 應用程式可以建立一個TCP connection 到Bernard 的P2P 程式嗎？
+若你做不到的話，是因為什麼原因？請解釋。（10 分）
+五、多媒體網路應用在Internet 上越來越普遍，然Internet 本質為best-effort 的服務，對
+多媒體網路應用的服務品質（QoS: Quality of Service）的保證，有一定的困難與挑
+戰。試舉三個QoS 的參數，說明其為何在Internet 有其困難？（10 分）並各自提出
+與探討一個可能改善QoS 的方法。（10 分）

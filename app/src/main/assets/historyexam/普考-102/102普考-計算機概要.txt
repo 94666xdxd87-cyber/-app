@@ -1,0 +1,328 @@
+102 年公務人員普通考試試題
+類  科：電子工程、電信工程、資訊處理
+科  目：計算機概要
+考試時間： 1 小時
+座號：
+※注意： ※本試題為單一選擇題，請選出一個正確或最適當的答案，複選作答者，該題不予計分。
+注：本科目共40題，每題2.5分，須用2B鉛筆在試卡上依題號清楚劃記，於本試題上作答者，不予計分。
+禁止使用電子計算器。
+代號：5405
+頁次：6－1
+[第 1 題] 下列何者（約略）等於240 bytes？
+(A) 1 megabytes 或106 bytes
+(B) 1 gigabytes 或109 bytes
+(C) 1 terabytes 或1012 bytes
+(D) 1 petabytes 或1015 bytes
+[第 2 題] 全加器之進位輸出其布林函數（Boolean function）為：
+(A) C=xy ’z+x ’yz+xy
+(B) C=xy ’z+x ’yz+x ’y
+(C) C=xy ’z+ x ’y ’z+xy
+(D) C=x ’y ’z+x ’yz+x ’y
+[第 3 題] 下列關於記憶體階層（memory hierarchy）的描述，何者正確？
+(A) 由於現今記憶體較為便宜，所以每一層記憶體的容量應該儘量接近
+(B) 為了避免CPU 存取不到資料，所以每一層記憶體的容量應該一樣大
+(C) 當CPU 要存取的資料不在快取記憶體時，系統會發生分頁錯誤（page fault）的中斷
+(D) 如果一筆資料沒有被儲存在主記憶體（main memory）的話，就一定不會出現在快取記憶體內
+[第 4 題] 在一個分頁系統（paging system）中，假設一個分頁（page）或分頁框（frame）皆為4 Kbytes，且分頁
+表（page table）的項目（entry）0 到項目4 所記載的分頁框號碼（frame number）分別為2, 3, 4, 1, 0。
+請問邏輯位址（logical address）10 K 對應之實體位址（physical address）為何？
+(A) 10 K
+(B) 14 K
+(C) 18 K
+(D) 6 K
+[第 5 題] 下列那一種記憶體的結構是由電容來組成，因此需要定時刷新（refresh）其內存值？
+(A) Flash memory
+(B) SRAM
+(C) DRAM
+(D) ROM
+[第 6 題] 下列那一個作業系統可以使用於非常低階、不支援虛擬記憶體技術的處理器上？
+(A) Windows 7
+(B) Ubuntu
+(C) Android
+(D) DOS
+[第 7 題] 下列何者不是電腦系統中的資料儲存元件？
+(A) ALU
+(B) Cache
+(C) Register
+(D) Disk
+[第 8 題] 下列何者不是系統發生輾轉（thrashing）的現象？
+(A) CPU 使用率高
+(B) 磁碟忙碌
+(C) 記憶體不足
+(D) 系統效能不彰
+[第 9 題] 一數位計算機使用32 位元指令字組（instruction word），該字組內含下述欄位：Opcode 欄位使用8
+位元，2 個暫存器欄位（Register Field）每一欄位為6 位元，及1 個12 位元的立即運算元（Immdiate
+Operand）／暫存器欄位。試問其可以表示的無號數（unsigned）立即運算元之範圍為何？
+(A) 0～1023
+(B) 0～4095
+(C) -512～511
+(D) -2048～2047
+[第 10 題] 十六進位數(B65C)16 相當於十進位數的：
+(A) (45,286)10
+(B) (89,278)10
+(C) (46,684)10
+(D) (12,784)10
+[第 11 題] 下列何者是邏輯式
+)
+(
+ABC
+BC
+A
+A
++
+的化簡結果？
+(A)
+ABC
+BC +
+(B) BC
+(C)
+BC
+A
+(D) ABC
+[第 12 題] 設計一個能監視8 個地點的防盜錄影系統，每個地點有一台攝影機，若想要利用一台錄影機輪流錄
+下8 個地點的影像，應使用下列那一個裝置？
+(A) 多工器（multiplexer）：將多組輸入輪流傳送到一組輸出
+(B) 解多工器（demultiplexer）：將一組輸入輪流傳送到多組輸出
+(C) 編碼器（encoder）：將輸入的標準影像用特定的格式編碼
+(D) 解碼器（decoder）：將輸入的以特定格式編碼的影像解碼成為標準影像
+代號：5405
+頁次：6－2
+[第 13 題] 64 位元作業系統相較於32 位元作業系統，最大的優勢在於：
+(A) 可以擁有更大的定址空間（memory address space）
+(B) 更適合多處理器
+(C) 速度更快
+(D) 時脈更高
+[第 14 題] 對一個多執行緒（multi-threaded）的程序（process）而言，下列那一部分不是執行緒間共享的？
+(A) 程式碼
+(B) 全域變數（global variables）
+(C) 堆疊區（stack）
+(D) 該程序所開啟的檔案資訊（opened file information）
+[第 15 題] 若有三個程序P1, P2, P3 都在時間0 到達。假設P1, P2, P3 之執行時間分別為24, 4, 2 個時間單位。
+則在最短工作優先（Shortest-Job-First, SJF）排程演算法（scheduling algorithm）下，三程序的平均等
+待時間為何？（四捨五入到整數）註：一行程的等待時間為該行程到達至其執行結束的過程中，花
+費在等待其它行程的時間。
+(A) 2
+(B) 3
+(C) 5
+(D) 6
+[第 16 題] 下列為有關圖形（Graph）結構與樹狀（Tree）結構相關性之敘述：
+①圖形（Graph）結構與樹狀（Tree）結構之相同點之一是二者之組成皆包含節點（Node）之集合
+與邊線（Edge）之集合
+②若D1 是一樹狀（Tree）結構則D1必為圖形（Graph）結構；若D2 是一圖形（Graph）結構則D2不
+必然為樹狀（Tree）結構
+③若G 是圖形（Graph）結構且其各節點之內向度數（In-degree）di 皆滿足d i≤1，則G 必為樹狀
+（Tree）結構
+④若G 是由n 節點（Node）所組成之連結圖形（Connected graph）結構，則G 必為樹狀（Tree）結構
+⑤若G 是由n 節點（Node）所組成之圖形（Graph）結構且G 亦為一樹狀（Tree）結構，則組成G
+之邊線（Edge）數為(n-1)
+(A) ①②正確；③⑤錯誤
+(B) ②⑤正確；③④錯誤
+(C) ②③正確
+(D) ④⑤錯誤
+[第 17 題] 下列二元樹（binary tree），若採用中序走訪（inorder traversal），則走訪順序為何？
+(A) DBEAC
+(B) ABCDE
+(C) ABDEC
+(D) DEBCA
+[第 18 題] 一個有n 個端點（vertices）的有向完全圖形（directed and complete graph）有多少個邊（edges）？
+(A) n(n-1)
+(B) n(n-1)/2
+(C) n!
+(D) n!/2
+A
+B
+D
+E
+C
+代號：5405
+頁次：6－3
+[第 19 題] 在選用資料結構實作二元樹（binary tree）時，下列何者正確？
+(A) 只能以鏈結串列（linked list）實作二元樹外，無法以陣列（array）實作二元樹
+(B) 只能以陣列實作二元樹外，無法以鏈結串列實作二元樹
+(C) 鏈結串列和陣列兩者皆可以用來實作二元樹
+(D) 鏈結串列和陣列兩者皆無法用來實作二元樹
+[第 20 題] 下列那一種排序方法類似於整理手上的撲克牌（亦即一次移動一張牌的位置，來依照花色和數字排
+好）？
+(A) 插入排序法（insertion sort）
+(B) 交換排序法（exchange sort）
+(C) 選擇排序法（selection sort）
+(D) 合併排序法（merge sort）
+[第 21 題] 已知一佇列（queue）的內容為「甲、乙、丙、丁」，試問欲將其內容變更為「丁、丙、乙、甲」至
+少需要幾個刪除（deletion）動作和幾個新增（addition）動作？
+(A) 兩個刪除（deletion）動作，三個新增（addition）動作
+(B) 三個刪除（deletion）動作，兩個新增（addition）動作
+(C) 三個刪除（deletion）動作，三個新增（addition）動作
+(D) 三個刪除（deletion）動作，四個新增（addition）動作
+[第 22 題] 下圖為一個二元搜尋樹，已知所儲存的關鍵值均不相同，請問下列何者正確？
+(A) a>b>c
+(B) a<b<c
+(C) b<c<a
+(D) b<a<c
+[第 23 題] 下列有關最大堆積（max heap）的敘述，何者正確？
+(A) 子節點（child node）的鍵值（key value）必會大於等於父節點（parent node）的鍵值（key value）
+(B) 必為完滿二元樹（full binary tree）
+(C) 必為完整二元樹（complete binary tree）
+(D) 必為二元搜尋樹（binary search tree）
+[第 24 題] 樹狀（Tree）結構由儲存資料之節點（Node）與連接節點之樹枝（Branch）組成。下列為有關樹狀
+（Tree）結構之敘述：
+①樹根（Root）節點是所有其他節點之父節點（Parent node）
+②樹根（Root）節點必為內部節點（Internal node）
+③樹葉節點（Leaf node）是沒有子樹（Subtree）之節點
+④樹葉節點（Leaf node）必有父節點（Parent node）
+⑤將樹狀（Tree）結構之任意一外部節點（External node）移除後，原有之樹狀（Tree）結構成為森
+林（Forest）結構
+(A) ①③正確；④⑤錯誤
+(B) ②③正確；①④錯誤
+(C) ②③④正確
+(D) ②⑤錯誤
+a
+c
+b
+代號：5405
+頁次：6－4
+[第 10 題] 7
+[第 8 題] 2
+[第 5 題] 25
+請問下圖屬於那一種資料結構？
+(A) 二元搜尋樹（binary search tree）
+(B) 紅黑樹（red-black tree）
+(C) 最大堆積（max heap）
+(D) 最小堆積（min heap）
+[第 26 題] 下列的高階程式語言何者最早推出？
+(A) FORTRAN
+(B) C
+(C) C++
+(D) Java
+[第 27 題] 程式語言中，下列何者不需要使用布林（Boolean）運算式？
+(A) if-then-else 陳述（statement）
+(B) assignment 陳述（statement）
+(C) while loop 陳述（statement）
+(D) for loop 陳述（statement）
+[第 28 題] 在大部分的程式語言中，變數宣告（variable declaration）中通常包含變數的名稱（name）及變數的
+何項屬性？
+(A) 大小（size）
+(B) 長度（length）
+(C) 樣式（style）
+(D) 型別（type）
+[第 29 題] 在C++或Java 程式語言中，何謂「函式重載（function overloading）」？
+(A) 多個相同名稱的函式，但參數（parameter）個數不同，或是參數型別（type）不同
+(B) 多個不同名稱的函式，但參數（parameter）個數相同，且參數型別（type）相同
+(C) 多個相同名稱的函式，且參數（parameter）個數與型別（type）皆相同，但分屬於主類別（base class）
+及其衍生類別（derived class）
+(D) 多個不同名稱的函式，且參數（parameter）個數與型別（type）皆相同，但分屬於主類別（base class）
+及其衍生類別（derived class）
+[第 30 題] 以Java 程式語言所撰寫的程式可以運行在下列何種電腦中？
+(A) 任何已安裝Java 虛擬機器（virtual machine）的電腦
+(B) 任何已安裝網頁瀏覽器（Web browser）的電腦
+(C) 任何連接到網際網路（Internet）的電腦
+(D) 任何可以運行C++程式的電腦
+[第 31 題] 執行下列C 語言程式後，產生的輸出為何？
+#include <stdio.h>
+int f (int a, int b) {
+if (a<=0) return b+1;
+else if (b<=0) return f(a-1, 1);
+else return f( a-1, f(a, b-1) );
+}
+main() {
+printf(“%d\n”, f(2, 1));
+}
+(A) 1
+(B) 3
+(C) 5
+(D) 7
+代號：5405
+頁次：6－5
+[第 32 題] 在Internet 架構中，網路層（network layer）主要負責任務為：
+(A) 路由（routing）
+(B) 建立端點對端點（end-to-end）邏輯通道（logical channel）
+(C) 解決網路壅塞（network congestion）情況
+(D) 確保資料無遺失地送達目的端主機（destination host）
+[第 33 題] 傳統IP（Internet Protocol）位址包含網路位址與主機位址，網路位址用來識別所屬的網路；假設網
+路位址為140.112，請問有多少IP 位址可以用來識別網路上的個別裝置？
+(A) 65536
+(B) 1024
+(C) 16384
+(D) 32768
+[第 34 題] 目前一些新興的下載軟體，如：eMule, eDonkey 等軟體，屬於下列何種架構？
+(A) 傳統單機計算架構
+(B) 主、從架構（client-server computing）
+(C) 點對點架構（peer-to-peer）
+(D) 大型主機架構
+[第 35 題] 有關執行下列兩個C 語言程式結果的比較，何者正確？
+程式P1
+程式P2
+#include<stdio.h>
+int n=0;
+#define f(x) n = x;
+main() {
+int n = 0;
+f(1);
+printf(“%d\n”, n);
+}
+#include<stdio.h>
+int n=0;
+void f(int x) {n = x;}
+main() {
+int n = 0;
+f(1);
+printf(“%d\n”, n);
+}
+(A) 兩個程式的輸出都是0
+(B) 兩個程式的輸出都是1
+(C) 程式片段P1 的輸出為0，程式片段P2 的輸出為1
+(D) 程式片段P1 的輸出為1，程式片段P2 的輸出為0
+[第 36 題] 下列以C 程式語言撰寫之程式執行後產生之輸出為何？
+#define  PLUS(a, b)  a-b
+#define  MINUS(a, b)  a+b
+#include  <stdio.h>
+main()
+{  int  ml=5,  m2=3;
+ml = PLUS(m1+m2, m1-m2)*MINUS(m2-m1, m2+m1);
+printf(“%d\n”, ml);
+}
+(A) -3
+(B) 1
+(C) 36
+(D) -60
+代號：5405
+頁次：6－6
+[第 37 題] 下列以C++程式語言撰寫之程式執行後的輸出為何？
+#include <iostream>
+using namespace std;
+class P
+{
+public:
+P() { cout << 'B'; }
+~P() {cout << 'D'; }
+};
+int main()
+{
+P p;
+cout << '1';
+if (true)
+{
+cout << '2';
+P p2;
+}
+cout << '3';
+return 0;
+}
+(A) BB123DD
+(B) B12BD3D
+(C) B1B2D3D
+(D) B1B23DD
+[第 38 題] 以下有關安全傳輸協定（Secure Socket Layer, 簡稱SSL）的敘述，何者錯誤？
+(A) 使用SHA-1 或MD5 等演算法，確保資料的機密性
+(B) SSL 是介於應用層與TCP/IP 層之間的傳輸協定
+(C) 若使用SSL 傳送信用卡資料，則信用卡資料會被交易的商家知道
+(D) 可依環境不同加入適當的加密演算法，不需重新建構新的通訊協定
+[第 39 題] 以下何者不是網路安全憑證之認證機構（Certification Authority, CA）的主要功能？
+(A) 憑證簽發、更新與終止
+(B) 憑證保存
+(C) 憑證過戶
+(D) 憑證提供
+[第 40 題] 下列何種電子資料安全防護機制，可以達到不可否認（non-repudiation）之安全特質？
+(A) 對稱密鑰加密（symmetric secret key encryption）
+(B) 非對稱公鑰加密（asymmetric public key encryption）
+(C) 數位摘要（digital digest）
+(D) 數位簽章（digital signature）

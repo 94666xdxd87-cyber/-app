@@ -1,0 +1,91 @@
+全一張 
+（正面）
+102年公務人員高等考試三級考試試題 
+代號：36270
+類  科： 資訊處理 
+科  目： 資料庫應用 
+考試時間： 2 小時 
+座號：          
+※注意： ※禁止使用電子計算器。 
+注：不必抄題，作答時請將試題題號及答案依照順序寫在試卷上，於本試題上作答者，不予計分。
+一、已知一個資料庫，其關連（relation）的屬性（attribute）之間，有以下的關係。有底
+線者為該關連的主鍵屬性（key attribute）。 
+R(r1, r2) 
+S(s1, s2) 
+T(s1, t1, t2) 
+其中s1 就是relation S 的s1。 
+U(u1, u2, u3, u4) 
+其中u1 references r1，u2 references s1。 
+V(r1, v1) 
+其中r1 就是relation R 的r1。 
+除了上述所附註說明的屬性之外，其餘屬性互相之間並沒有任何關係。根據以上資料，
+試推測此資料庫的實體-關係綱目圖（ER schema diagram）該是如何？請繪出其ER 
+schema diagram，並說明原因。圖中需註明所有能推知的基數比（cardinality ratio），
+如1:1、1:N、M:N 等等。（15 分）
+二、試回答以下有關DBMS user 的問題： 
+Tool developer
+※
+主要是做什麼工作，試舉例說明。（5 分） 
+Parametric end user
+注：
+是如何使用系統，試舉例說明。（5 分） 
+Application programmer
+
+是做什麼工作，試說明之。（5 分）
+三、某關連R(A, B, C, D, E, F, G) 的屬性之間有以下的關係。其中 “→” 是functional 
+dependency。 
+AB → CE，F ⊆ E，D ⊆ B，G → B 
+※試推導（inference）出屬性之間的functional dependencies，並指出整個關連的key 
+attribute 應為何者。（10 分） 
+注：請將此關連作第二正規化（second normal form），指明各關連的key attribute 是
+何者。（5 分） 
+請繼續將注：的結果作第三正規化（third normal form），指明各關連的key attribute
+是何者。（5 分）
+四、已知有一手機製造公司資料庫綱目（database schema）如下： 
+工程師（編號，名字，年齡，性別，薪水） 
+產品（代號，名目，年銷售量，售價） 
+設計（編號，代號） 
+請用SQL 回答下列問題： 
+※列出公司所有男工程師的平均薪水。（5 分） 
+注：對於沒有參與任何一項產品設計的工程師，或者所參與設計的產品年銷售量低於
+1 萬隻的，列出這些工程師的名字和年齡。（10 分） 
+針對年銷售量高於20 萬隻的每一項產品，且參與設計此產品的工程師數目不超
+過5 人的，列出其產品名目和工程師的平均薪水。（10 分）
+（請接背面）
+全一張 
+（背面）
+102年公務人員高等考試三級考試試題 
+代號：36270
+類  科： 資訊處理 
+科  目： 資料庫應用
+五、Tr1 和Tr2 是二個交易（transaction）。某次執行程序（schedule）如下：假設X 和Y
+在硬碟裡的初始值是X=1000，Y=1000。
+Time Transaction Tr1 
+Transaction Tr2 
+t1 
+read X 
+ 
+t2 
+ 
+read Y 
+t3 
+X=X－1000 
+ 
+t4 
+ 
+read X 
+t5 
+write X 
+ 
+t6 
+ 
+Y=X＋1000 
+t7 
+ 
+write Y
+※請問按以上執行方式，此執行程序（schedule）是否為serializable？（5 分） 
+注：如果Tr1 和Tr2 按Two-phase locking protocol 執行，請說明系統會如何進行？
+（10 分） 
+如果此程序是按time-stamping protocol 執行，且Tr1 在Tr2 之後才進入系統
+（亦即，TimeStamp(Tr1) > TimeStamp(Tr2))。說明上面程序的執行結果是如何。
+（10 分）

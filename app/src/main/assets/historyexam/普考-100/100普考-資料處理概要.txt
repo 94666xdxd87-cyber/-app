@@ -1,0 +1,42 @@
+100年公務人員普通考試試題
+代號：
+類  科： 統計、資訊處理
+科  目： 資料處理概要
+考試時間： 1 小時30 分
+座號：
+※注意： ※禁止使用電子計算器。
+注：不必抄題，作答時請將試題題號及答案依照順序寫在試卷上，於本試題上作答者，不予計分。
+全一頁
+41260、44160
+一、SSL（Secure Sockets Layer）為一提供應用程式通訊安全與信賴的協定，請說明：
+※SSL 如何建立使用者與服務伺服器間的安全通道，尤其是秘密鑰匙（secret key）
+的建立方式？注：SSL 與SET 的不同處為何？（20 分）
+二、無線區域網路（Wireless LAN)將推動網際網路進一步的發展，請說明無線區域網路
+有何優勢？（10 分）
+三、一個鏈結串列使用C 語言宣告如下：
+typedef struct node {
+int data;
+struct node *next;
+} NODE;
+假設現在已經產生一個共有n 個節點的NODE 的鏈結串列，已知變數pointer 是指
+向該串列前端（head）之指標，請撰寫一程序將pointer 所指向的串列，整個串列進
+行反轉。（15 分）
+四、給定一數列54, 65, 50, 45, 89, 40, 25, 31, 72, 78。（15 分）
+※畫出對應二元樹（Binary Tree）。
+注：請將這二元樹轉換成堆集樹（Heap Tree）。
+在使用堆集排序（Heap Sort）的前二個步驟後可輸出89 和78 兩數，請畫出在經
+過該二個步驟後的堆集樹。
+五、假設某圖書館之關聯資料庫中有七個關聯資料表，其資料綱要（data schema）如下，
+底線代表主要鍵。
+BOOK（BookId, Title, PublisherName）
+BOOK_AUTHORS（BookId, AuthorName）
+PUBLISHER（Name, Address, Phone）
+BOOK_COPIES（BookId, BranchId, No_Of_Copies）
+BOOK_LOANS（BookId, BranchId,  CardNo, DataOut, DueDate）
+LIBRARY_BRANCH（BranchId, BranchName, Address）
+BORROWER（CardNo, Name, Address, Phone）
+寫出以下查詢之SQL：（40 分）
+※該圖書館的所有分館各擁有多少本書名為“三國演義＂的書？
+注：現在那些借閱人在各分館借出“三國演義＂這本書？
+現在那些借閱人在各分館有逾期未還的書？
+該圖書館擁有多少不同的書籍？

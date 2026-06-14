@@ -1,0 +1,168 @@
+107年公務人員高等考試三級考試試題 
+代號：36340 
+全四頁
+第一頁
+類
+科： 資訊處理 
+科
+目： 程式語言 
+考試時間： 2 小時 
+座號：
+※注意： ※禁止使用電子計算器。 
+注：不必抄題，作答時請將試題題號及答案依照順序寫在試卷上，於本試題上作答者，不予計分。 
+本科目除專門名詞或數理公式外，應使用本國文字作答。
+一、以下二小題是完整的C/C++程式碼，請回答執行的結果為何？（每小題10 分，共20 分）
+※ 
+#include <stdio.h> 
+#include <stdlib.h> 
+ 
+int recFun(int); 
+int main(void) { 
+printf("%d\n", recFun(12345)); 
+ 
+   return 0;  
+} 
+ 
+int recFun(int n) { 
+    if (n<10) 
+        return n; 
+    else 
+        return recFun(n/10) + n%10; 
+}
+（請接第二頁）
+107年公務人員高等考試三級考試試題 
+代號：36340 
+全四頁
+第二頁
+類
+科： 資訊處理 
+科
+目： 程式語言
+注： 
+#include <iostream> 
+#include <cstdlib> 
+#include <string> 
+using namespace std; 
+ 
+struct data { 
+  string name; 
+  int a, b; 
+}; 
+ 
+void fun1(struct data), fun2(struct data *), fun3(struct data); 
+ 
+int main(void) { 
+    struct data man={"John", 11, 33}, lady={"Linda", 22, 44}; 
+    cout<< "After process..." <<endl; 
+    fun2(&man); 
+    fun3(lady); 
+    fun1(man); 
+    fun1(lady);  
+ 
+    return 0; 
+} 
+ 
+void fun1(struct data in) { 
+    cout<< "Name: " << in.name << endl; 
+    cout<< "a=" << in.a << ", "; 
+    cout<< "b=" << in.b <<endl; 
+} 
+ 
+void fun2(struct data *ptr) { 
+    int tmp; 
+ 
+    tmp = ptr->a; 
+    ptr->a = ptr->b;   
+    ptr->b = tmp;    
+} 
+ 
+void fun3(struct data in) { 
+    int tmp; 
+ 
+    tmp = in.a; 
+    in.a = in.b; 
+    in.b = tmp; 
+}
+（請接第三頁）
+107年公務人員高等考試三級考試試題 
+代號：36340 
+全四頁
+第三頁
+類
+科： 資訊處理 
+科
+目： 程式語言
+二、以下是完整的Python 程式碼，請說明此程式的詳細功能為何？（10 分）
+import os.path 
+ 
+file1 = input("Input a file name: ") 
+file2 = input("Input the other file name: ") 
+ 
+while not os.path.isfile(file1): 
+print("The file does not exist!") 
+    file1 = input("Input a file name again: ") 
+ 
+while os.path.isfile(file2): 
+    answer = input("The file existed, Overwrite it? y/n? ") 
+    if answer == 'n' or answer=='N': 
+        file2 = input("Input a file name again: ") 
+    else: 
+        break 
+ 
+fileObject1 = open(file1, "r") 
+fileObject2 = open(file2, "w") 
+ 
+content = fileObject1.read() 
+fileObject2.write(content) 
+ 
+fileObject1.close() 
+fileObject2.close()
+三、請撰寫一支密碼產生模組程式，此模組的密碼組成為一個五位數字，最後一碼（個
+位數）為驗證碼。合法的密碼規則是除了驗證碼之外的所有數字相乘後取除以10 的
+餘數當作驗證碼。例如：13575 即為合法的密碼，因為(1*3*5*7)%10=5。請撰寫一支
+完整C/C++程式，包含main()與codeGen()；codeGen()功能為輸入參數為密碼的前四
+碼，輸出為產生驗證碼之後的五位數字密碼。程式讓使用者輸入密碼的前四碼後，
+檢查使用者所輸入的數值是否為四位數，正確的話則呼叫codeGen()將傳回之五位數
+字密碼從螢幕顯示出。main()需有迴圈功能詢問使用者是否要繼續輸入，直到使用者
+按下不是’Y’或’y’鍵時結束程式。（20 分）
+（請接第四頁）
+（請接背面）
+107年公務人員高等考試三級考試試題 
+代號：36340 
+全四頁
+第四頁
+類
+科： 資訊處理 
+科
+目： 程式語言
+四、請撰寫一支完整的C/C++程式，此程式包含一個一維陣列，陣列元素的個數由使用
+者輸入，陣列元素值由時間亂數產生，數值範圍介於在1（含）至99（含）間。此
+程式需包含下列函數： 
+※arrMean()：將所傳入的一維陣列計算此陣列元素的平均值後傳回。（10 分） 
+注：arrBubble()：將所傳入的一維陣列利用氣泡排序法將陣列元素由小至大排序。（10 分） 
+撰寫main()以驗證arrMean()與arrBubble()的正確性。（5 分）
+五、使用C++, Java 或Python 程式語言設計機車里程數計算程式：
+※motor：機車類別 
+¾ brand：機車品牌的私有字串資料項目 
+¾ fuel：機車油量（公升）的私有數值資料項目 
+¾ speed：機車速度（公里/小時）的私有數值資料項目 
+¾ km：機車可行駛公里數的私有數值資料項目 
+¾ 建構函數可將新建立物件之機車品牌、油量、速度作初始化 
+¾ calKM()公有方法計算里程數，依標準機車計算，平均每公升可跑15 公里 
+¾ show()公有方法從螢幕顯示出機車品牌、油量、速度、可行駛公里數資訊 
+注：electricMotor：電動機車類別 
+¾ 繼承機車（motor）類別 
+¾ seat：電動機車座位數私有數值資料項目 
+¾ 建構函數可將新建立物件初始化 
+¾ calKM()公有方法計算電動機車可行駛公里數，不受速度影響，電動機車平均每公
+升可跑20 公里 
+¾ show()公有方法從螢幕顯示出電動機車品牌、油量、速度、可行駛公里數資訊 
+raceMotor：競技機車類別 
+¾ 繼承機車（motor）類別 
+¾ type：競技機車型號之私有字串資料項目 
+¾ 建構函數可將新建立物件初始化 
+¾ calKM()公有方法計算競技機車可行駛公里數；競技機車若時速超過每小時60 公
+里，則平均每公升可跑10 公里；沒超過的話則平均每公升可跑12 公里 
+¾ show()公有方法從螢幕顯示出競技機車品牌、油量、速度、可行駛公里數資訊 
+此題不需讓使用者輸入相關數值，只需在程式內建立電動機車與競技機車物件時給
+予相關的數值，但程式需執行show()方法以驗證程式的正確性。（25 分）

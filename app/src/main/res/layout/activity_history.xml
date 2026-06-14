@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:importantForAccessibility="noHideDescendants"
+    android:fitsSystemWindows="true"
+    android:background="#FAFAFA">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="14dp"
+        android:gravity="center_vertical"
+        android:background="#FFFFFF">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="📊 歷史成績"
+            android:textSize="18sp"
+            android:textColor="#212121"
+            android:textStyle="bold"/>
+
+        <Button android:id="@+id/btnClearHistory"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:text="清除"
+            android:textColor="#E53935"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#FFFFFF"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:paddingBottom="4dp">
+
+        <Button android:id="@+id/btnTabAll"
+            android:layout_width="0dp" android:layout_height="48dp"
+            android:layout_weight="1" android:text="全部"
+            android:textSize="13sp" android:layout_marginEnd="4dp"
+            style="@style/Widget.MaterialComponents.Button.TextButton"/>
+
+        <Button android:id="@+id/btnTabPractice"
+            android:layout_width="0dp" android:layout_height="48dp"
+            android:layout_weight="1" android:text="📘 練習"
+            android:textSize="13sp" android:layout_marginEnd="4dp"
+            style="@style/Widget.MaterialComponents.Button.TextButton"/>
+
+        <Button android:id="@+id/btnTabExam"
+            android:layout_width="0dp" android:layout_height="48dp"
+            android:layout_weight="1" android:text="🏆 模擬考"
+            android:textSize="13sp"
+            style="@style/Widget.MaterialComponents.Button.TextButton"/>
+    </LinearLayout>
+
+    <View android:layout_width="match_parent" android:layout_height="1dp"
+        android:background="#E0E0E0"/>
+
+    <TextView
+        android:id="@+id/tvHistorySummary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:background="#F5F5F5"
+        android:text="載入中..."
+        android:textSize="13sp"
+        android:textColor="#616161"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="8dp"
+        android:fadeScrollbars="false">
+
+        <LinearLayout
+            android:id="@+id/layoutHistory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"/>
+    </ScrollView>
+
+    <Button android:id="@+id/btnBackFromHistory"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="返回主畫面"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="@dimen/bottom_safe_padding"/>
+
+</LinearLayout>

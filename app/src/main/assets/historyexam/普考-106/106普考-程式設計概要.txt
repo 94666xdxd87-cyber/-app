@@ -1,0 +1,80 @@
+106年公務人員普通考試試題
+代號：44150
+全一張
+（正面）
+類
+科：資訊處理
+科
+目：程式設計概要
+考試時間：1 小時30 分
+座號：
+※注意： ※禁止使用電子計算器。
+注：不必抄題，作答時請將試題題號及答案依照順序寫在試卷上，於本試題上作答者，不予計分。
+本科目除專門名詞或數理公式外，應使用本國文字作答。
+（請接背面）
+一、用C 語言撰寫一個函式void bit_pattern(unsigned num)，它能將一個32-bit
+整數數值0 與1 的bit pattern 列印出來。例如數值是444 所列印出來的bit pattern 應
+該是00000000 00000000 00000001 10111100？（15 分）
+二、用C 語言撰寫一個函式，能反轉一單向鍊結串列（singly linked list）：
+struct node* reverse(struct node *h)。
+單向鍊結串列範例如圖一。（25 分）
+函式內請勿複製結點，其中節點的資料結構為
+struct node {
+int d;
+struct node *next;
+}
+圖一、單向鍊結串列範例
+三、用C 語言撰寫反覆結構（for-loop）及遞迴（recursive）2 個版本的函式，分別計算出
+費式數列（Fibonacci Sequence）：int F(int n)，其數學定義如下：
+F0 = 0, F1 = 1, and Fn = Fn–1 + Fn–2 for n >1。（25 分）
+例如: 呼叫 F(6) 計算出 8 and F(7) 計算出13。
+四、在物件導向語言（JAVA or C++），宣告變數為public, private, protected，其差異性為
+何？（10 分）
+[第 3 題] 5
+[第 8 題] h
+h
+反轉
+[第 8 題] 5
+[第 3 題] 106年公務人員普通考試試題
+代號：44150
+全一張
+（背面）
+類
+科：資訊處理
+科
+目：程式設計概要
+五、AJAX 即「Asynchronous JavaScript and XML」（非同步的JavaScript 與XML 技術）
+為一重要且普遍用來產生高互動網頁的技術，可讓使用者在執行AJAX 網頁時就像
+在執行桌上電腦程式（desktop application）一樣順暢（如圖二）。
+※請說明AJAX 三個主要技術為何並說明其目的。（9 分）
+注：並請以以下網頁為例，當使用者輸入字元後的網頁反應，說明傳統非AJAX 與AJAX
+網頁不同之處。（10 分）
+請說明網頁程式碼中‘xmlhttp.readyState==4’，‘xmlhttp.status==200’
+及‘"gethint.php?q="+str’代表的意義為何？（6 分）
+<html lang="en-US">
+<head><script>
+function showHint(str)
+{
+if (str.length==0) {
+document.getElementById("txtHint").innerHTML=""; return;
+} else {
+var xmlhttp=new XMLHttpRequest();
+xmlhttp.onreadystatechange=function() {
+if (xmlhttp.readyState==4 && xmlhttp.status==200) {
+document.getElementById("txtHint").innerHTML=xmlhttp.responseText; }
+};
+xmlhttp.open("GET","gethint.php?q="+str, true);
+xmlhttp.send();
+}
+}
+</script></head>
+<body>
+<div class="w3-example">
+<h3>Example</h3>
+<form action="javascript:void(0);" class="w3-code-result">
+<p><b>Start typing a name in the input field below:</b></p>
+<p> Name: <input type="text" id="txt1" onkeyup="showHint(this.value)" size="20">
+&nbsp;&nbsp;Suggestions: <span id="txtHint"></span> </p>
+</form>
+</div></body></html>
+圖二、2 個AJAX 範例程式執行結果
